@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <rect width="64" height="64" rx="14" fill="#111110"/>
-  <path d="M20 18V46M20 32L38 18M28 26L44 46" stroke="#f4f4f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="46" cy="44" r="4.5" fill="#eb3a22"/>
+  <!-- Geometric 'D' Monogram for Donor -->
+  <path d="M22 18V46M22 18H33C40.732 18 47 24.268 47 32C47 39.732 40.732 46 33 46H22" stroke="#f4f4f2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48" cy="46" r="4.5" fill="#eb3a22"/>
 </svg>

@@ -7,7 +7,7 @@ class SoundEngine {
   constructor() {
     this.audioCtx = null;
     this.enabled = false;
-    this.storageKey = 'ken-portfolio-sound';
+    this.storageKey = 'donor-portfolio-sound';
     
     // Check saved state
     try {

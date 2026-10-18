@@ -136,7 +136,7 @@ class ProjectEstimator {
         large: 'Full Enterprise Platform'
       };
 
-      const summary = `Hi Ken, I'd like to consult on a project:
+      const summary = `Hi Donor, I'd like to consult on a project:
 - Type: ${typeLabels[this.state.projectType] || this.state.projectType}
 - Scope: ${scopeLabels[this.state.scope] || this.state.scope}
 - Features: ${this.state.features.join(', ') || 'Standard Core'}

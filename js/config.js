@@ -4,16 +4,16 @@
  */
 const PortfolioConfig = {
   profile: {
-    brandName: "ken.",
+    brandName: "donor.",
     brandSuffix: "portfolio",
-    fullName: "Ken",
+    fullName: "Donor",
     title: "Software Engineer & Digital Craftsman",
     lead: "Building resilient web applications, systems, and digital interfaces. Hand-crafted code, architectural clarity, zero page-builder bloat.",
     location: "14.5995° N, 120.9842° E",
     locationCity: "Manila, Philippines / Worldwide Remote",
     status: "Available for Q3/Q4 Projects & Systems Consulting",
     statusAvailable: true,
-    email: "ken.developer.pro@gmail.com",
+    email: "donor.developer.pro@gmail.com",
     github: "https://github.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",

@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     try {
-      localStorage.setItem('ken-portfolio-theme', theme);
+      localStorage.setItem('donor-portfolio-theme', theme);
     } catch (e) {}
 
     // Update radio inputs in menu
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Initialize theme
-  const savedTheme = localStorage.getItem('ken-portfolio-theme') || 
+  const savedTheme = localStorage.getItem('donor-portfolio-theme') || 
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   setTheme(savedTheme);
 
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
   copyEmailBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const email = config.profile.email || 'ken.developer.pro@gmail.com';
+      const email = config.profile.email || 'donor.developer.pro@gmail.com';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(() => {
           window.showAppToast(`Copied ${email} to clipboard!`);

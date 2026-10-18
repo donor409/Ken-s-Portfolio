@@ -1,19 +1,20 @@
 {
-  "name": "kens-portfolio",
+  "name": "donor-portfolio",
   "version": "1.0.0",
-  "description": "Interactive Architectural Swiss Portfolio inspired by Metic Studio, edge-deployed to Cloudflare Pages",
+  "description": "Interactive Architectural Swiss Portfolio for Donor inspired by Metic Studio, edge-deployed to Cloudflare Pages",
   "main": "index.html",
   "scripts": {
     "start": "npx serve .",
-    "deploy": "npx wrangler pages deploy . --project-name=ken-portfolio"
+    "deploy": "npx wrangler pages deploy . --project-name=donor-portfolio"
   },
   "keywords": [
     "portfolio",
+    "donor",
     "metic-studio",
     "swiss-design",
     "cloudflare-pages",
     "interactive"
   ],
-  "author": "Ken",
+  "author": "Donor",
   "license": "MIT"
 }

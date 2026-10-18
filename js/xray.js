@@ -5,7 +5,7 @@
 class XRayInspector {
   constructor() {
     this.isActive = false;
-    this.storageKey = 'ken-portfolio-xray';
+    this.storageKey = 'donor-portfolio-xray';
     this.toggleBtn = document.getElementById('xray-toggle');
     this.navStatus = document.getElementById('nav-xray-status');
     
