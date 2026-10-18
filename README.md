@@ -1,8 +1,8 @@
-# Hi there, I'm Ken Bernard Donor 👋
+# Ken Bernard Donor 👋
 **Computer Engineering Student · Systems & Embedded Engineer · Full-Stack Architect**
 
 📍 Binangonan, Rizal, Philippines · ICCT Colleges Cainta Main Campus  
-🌐 **Portfolio:** [donor.pages.dev](https://donor.pages.dev) *(Interactive Swiss Architectural Portfolio)*  
+🌐 **Portfolio:** [donor409.github.io/Ken-s-Portfolio](https://donor409.github.io/Ken-s-Portfolio/) *(Interactive Swiss Architectural Portfolio)*  
 ✉️ **Contact:** `donor.dev@example.com`
 
 ---
@@ -46,7 +46,7 @@ An aspiring Computer Engineer specializing in high-performance software systems,
 
 ### 📌 Pinned Repositories
 
-1. **`donor-architectural-portfolio`**  
+1. **`Ken-s-Portfolio`**  
    *High-performance, single-page interactive portfolio built with Swiss typography, Web Audio API sound synth, and X-Ray blueprint overlay.*
 2. **`nexus-campus-app`**  
    *Android-based event management system featuring real-time Firebase sync and automated check-ins.*
