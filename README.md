@@ -3,7 +3,7 @@
 
 📍 Binangonan, Rizal, Philippines · ICCT Colleges Cainta Main Campus  
 🌐 **Portfolio:** [donor409.github.io/Ken-s-Portfolio](https://donor409.github.io/Ken-s-Portfolio/) *(Interactive Swiss Architectural Portfolio)*  
-✉️ **Contact:** `donor.dev@example.com`
+✉️ **Contact:** `donorken6@gmail.com`
 
 ---
 
