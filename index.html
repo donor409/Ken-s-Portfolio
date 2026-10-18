@@ -263,8 +263,6 @@
               <h3 class="toolkit-title">software & web</h3>
               <ul class="toolkit-skill-list">
                 <li class="toolkit-skill-item">typescript</li>
-                <li class="toolkit-skill-item">vite</li>
-                <li class="toolkit-skill-item">tailwind css</li>
                 <li class="toolkit-skill-item">kotlin</li>
                 <li class="toolkit-skill-item">java / oop</li>
                 <li class="toolkit-skill-item">c / c++</li>
@@ -283,13 +281,10 @@
               <ul class="toolkit-skill-list">
                 <li class="toolkit-skill-item">android studio</li>
                 <li class="toolkit-skill-item">firebase auth</li>
-                <li class="toolkit-skill-item">cloud firestore</li>
                 <li class="toolkit-skill-item">firebase cloud messaging</li>
                 <li class="toolkit-skill-item">figma ui/ux</li>
-                <li class="toolkit-skill-item">agile / scrum</li>
                 <li class="toolkit-skill-item">system architecture</li>
                 <li class="toolkit-skill-item">uml modeling</li>
-                <li class="toolkit-skill-item">docker</li>
               </ul>
             </div>
           </div>
@@ -303,10 +298,6 @@
                 <li class="toolkit-skill-item">esp32</li>
                 <li class="toolkit-skill-item">arduino</li>
                 <li class="toolkit-skill-item">embedded c / c++</li>
-                <li class="toolkit-skill-item">vl53l0x tof sensors</li>
-                <li class="toolkit-skill-item">max30102 pulse oximeter</li>
-                <li class="toolkit-skill-item">i2c / spi / uart</li>
-                <li class="toolkit-skill-item">tca9548a multiplexing</li>
                 <li class="toolkit-skill-item">oled displays</li>
                 <li class="toolkit-skill-item">circuit schematics</li>
                 <li class="toolkit-skill-item">digital logic</li>
@@ -322,7 +313,7 @@
               <ul class="toolkit-skill-list">
                 <li class="toolkit-skill-item">gemini</li>
                 <li class="toolkit-skill-item">chatgpt</li>
-                <li class="toolkit-skill-item">google antigravity</li>
+                <li class="toolkit-skill-item">antigravity</li>
               </ul>
             </div>
           </div>
@@ -331,74 +322,81 @@
       </div>
     </section>
 
-    <!-- 4. WORKS SECTION (REPLACED FEATURED PROJECTS) -->
+    <!-- 4. WORKS SECTION (TANGGAPAN NG KALIGTASAN) -->
     <section id="works" class="projects-section" data-xray="[Section: Works]">
       <div class="shell">
         <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
           <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">DEVELOPED APPLICATIONS</span>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">FEATURED APPLICATION</span>
             <h2 class="display-2">Works<span class="text-accent">.</span></h2>
           </div>
-          <span class="measure">Web Application & Engineering Project</span>
+          <span class="measure">Disaster Risk & Emergency Mapping Web App</span>
         </div>
 
         <!-- Featured Web App Showcase Box -->
-        <div class="works-showcase-box" data-xray="[Box: Featured Web App]">
+        <div class="works-showcase-box" style="grid-template-columns: 1fr; margin-top: 3rem;" data-xray="[Box: Tanggapan ng Kaligtasan]">
           
-          <!-- Left: App Details & Description -->
+          <!-- Top: App Details & Description -->
           <div>
-            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
-              <span class="measure text-accent">WEB APPLICATION</span>
-              <span class="measure">2024 — 2026</span>
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span class="measure text-accent">WEB APPLICATION</span>
+                <span class="measure">RIZAL: CAINTA → BINANGONAN</span>
+              </div>
+              <span class="measure" style="color:var(--accent);">Active Development</span>
             </div>
             
-            <h3 class="display-3" style="font-size:2rem; margin-bottom:1rem;">Featured Web Application</h3>
+            <h3 class="display-3" style="font-size:clamp(1.75rem, 3.5vw, 2.75rem); margin-bottom:0.75rem;">
+              TANGGAPAN NG KALIGTASAN
+            </h3>
+            <p class="measure" style="font-size:0.9rem; color:var(--ink-muted); margin-bottom:1.5rem;">
+              Disaster Risk Map — Rizal (Cainta → Binangonan)
+            </p>
             
-            <p class="lead" style="font-size:1.05rem; line-height:1.6; margin-bottom:1.5rem; color:var(--ink-2);">
-              A responsive web application built with modern web technologies, designed to provide a clean and practical user experience.
-            </p>
-
-            <p style="font-size:0.9rem; line-height:1.6; color:var(--ink-muted); margin-bottom:2rem;">
-              This web app was designed and developed to deliver a smooth and practical digital workflow. Built using modern frontend tooling with Vite, TypeScript, and Tailwind CSS, focusing on clean component architecture, responsive interface, and seamless data handling.
-            </p>
+            <!-- Description & Purpose -->
+            <div style="display:grid; grid-template-columns: 1fr; gap:1.5rem; margin-bottom:2rem; max-width:85ch;">
+              <p class="lead" style="font-size:1.1rem; line-height:1.7; color:var(--ink);">
+                Ang application na ito ay ginawa para makatulong sa mga taong hindi alam kung saan lulugar o lilikas sa oras ng mga kalamidad tulad ng baha, sunog, o lindol.
+              </p>
+              <p style="font-size:0.95rem; line-height:1.7; color:var(--ink-2);">
+                It provides an interactive, real-time geospatial risk map for communities across Rizal (from Cainta, Taytay, and Angono to Binangonan). Residents can switch between disaster filters (<strong>Flood</strong>, <strong>Fire</strong>, and <strong>Earthquake</strong>), identify pinpointed evacuation centers and safe zones, recognize high-risk danger zones, and utilize live GPS tracking (<strong>Enable Location</strong> &amp; <strong>Follow Me</strong>) to make critical safety decisions during emergencies.
+              </p>
+            </div>
 
             <!-- Tech Pills -->
-            <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:2rem;">
-              <span class="tag-pill">TypeScript</span>
-              <span class="tag-pill">Vite</span>
-              <span class="tag-pill">Tailwind CSS</span>
-              <span class="tag-pill">Firebase</span>
-              <span class="tag-pill">Responsive Web</span>
-            </div>
-
-            <div style="display:flex; align-items:center; gap:1rem;">
-              <a href="#contact" class="btn btn-primary" data-cursor="hover">
-                <span>Inquire About This App</span>
-                <span class="btn-dot">
-                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
-                </span>
-              </a>
+            <div class="works-badge-row" style="margin-bottom:2rem;">
+              <span class="works-feature-pill">TypeScript</span>
+              <span class="works-feature-pill">Leaflet Maps</span>
+              <span class="works-feature-pill">OpenStreetMap</span>
+              <span class="works-feature-pill">Geolocation API</span>
+              <span class="works-feature-pill">Tailwind CSS</span>
+              <span class="works-feature-pill">Disaster Risk Mitigation</span>
             </div>
           </div>
 
-          <!-- Right: Interactive App Preview Frame / Screenshot Area -->
-          <div class="works-preview-frame">
+          <!-- Bottom: Full-Width Real Screenshot in Sleek Browser Frame -->
+          <div class="works-preview-frame" style="box-shadow: 0 20px 50px rgba(0,0,0,0.08); border-radius:var(--radius-card);" data-xray="[Screenshot: Tanggapan ng Kaligtasan]">
             <div class="works-preview-bar">
-              <span style="width:8px; height:8px; border-radius:50%; background:#ff5f56; display:block;"></span>
-              <span style="width:8px; height:8px; border-radius:50%; background:#ffbd2e; display:block;"></span>
-              <span style="width:8px; height:8px; border-radius:50%; background:#27c93f; display:block;"></span>
-              <span class="measure" style="font-size:10px; margin-left:6px; opacity:0.6;">app-preview.live</span>
+              <div style="display:flex; gap:6px;">
+                <span style="width:10px; height:10px; border-radius:50%; background:#ff5f56; display:block;"></span>
+                <span style="width:10px; height:10px; border-radius:50%; background:#ffbd2e; display:block;"></span>
+                <span style="width:10px; height:10px; border-radius:50%; background:#27c93f; display:block;"></span>
+              </div>
+              <div style="flex:1; text-align:center;">
+                <span class="measure" style="font-size:11px; opacity:0.75; background:var(--surface); padding:2px 14px; border-radius:9999px; border:1px solid var(--border);">
+                  tanggapan-ng-kaligtasan.app/disaster-map
+                </span>
+              </div>
+              <span class="measure" style="font-size:10px; opacity:0.5;">LIVE PREVIEW</span>
             </div>
             
-            <div class="works-preview-screen" id="app-screenshot-container">
-              <div style="max-width:280px; padding:1.5rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-md); box-shadow:0 10px 25px rgba(0,0,0,0.04);">
-                <div style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; background:rgba(235,58,34,0.1); color:var(--accent); margin:0 auto 1rem;">
-                  <svg width="22" height="22" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"></path></svg>
-                </div>
-                <div class="measure text-accent" style="font-size:11px; margin-bottom:4px;">WEB APPLICATION UI</div>
-                <div style="font-size:13px; font-weight:600; color:var(--ink);">Clean & Responsive Interface</div>
-                <div class="measure" style="font-size:9px; margin-top:8px; opacity:0.6;">Vite • TypeScript • Tailwind CSS</div>
-              </div>
+            <div class="works-preview-screen">
+              <img 
+                src="./assets/tanggapan-ng-kaligtasan.png" 
+                alt="Tanggapan ng Kaligtasan — Disaster Risk Map Web Application for Rizal by Donor" 
+                class="works-app-img" 
+                loading="eager"
+              />
             </div>
           </div>
 
@@ -417,16 +415,16 @@
           <div class="service-row" data-xray="[Timeline: 01]">
             <div class="service-num">2024 — PRESENT</div>
             <div class="service-title-box">
-              <h3>Web App Development & IoT Systems</h3>
-              <span class="service-subtitle">Academic & Personal Projects • Binangonan, Rizal</span>
+              <h3>Web App & Disaster Risk Systems Developer</h3>
+              <span class="service-subtitle">Tanggapan ng Kaligtasan Project • Binangonan, Rizal</span>
             </div>
             <p class="service-desc">
-              Designing and developing responsive web applications using Vite, TypeScript, and Tailwind CSS. Implementing backend services with Firebase and creating connected IoT prototypes using ESP32 microcontrollers.
+              Architected and built the 'Tanggapan ng Kaligtasan' disaster risk mapping web application for Rizal communities (Cainta to Binangonan), integrating interactive geospatial maps, multi-disaster filtering (Flood, Fire, Earthquake), and live location tracking.
             </p>
             <div class="service-deliverables">
               <span class="tag-pill">Web Apps</span>
+              <span class="tag-pill">Disaster Mapping</span>
               <span class="tag-pill">TypeScript</span>
-              <span class="tag-pill">ESP32</span>
             </div>
           </div>
 
@@ -437,7 +435,7 @@
               <span class="service-subtitle">ICCT Colleges Cainta Campus • Cainta, Rizal</span>
             </div>
             <p class="service-desc">
-              Built foundational skills in Object-Oriented Programming (Java, C++), database design with SQL, and developed early frontend web interfaces that led to current web application projects.
+              Built foundational skills in Object-Oriented Programming (Java, C++), database management with SQL, and developed early software and microcontroller systems that led to full-stack web application development.
             </p>
             <div class="service-deliverables">
               <span class="tag-pill">OOP</span>

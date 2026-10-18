@@ -17,7 +17,7 @@ const PortfolioConfig = {
     email: "donorken6@gmail.com",
     github: "https://github.com",
     linkedin: "https://linkedin.com",
-    resumeUrl: "#resume-modal",
+    resumeUrl: "#contact",
     avatar: "./assets/donor-photo.jpg"
   },
 
@@ -27,7 +27,7 @@ const PortfolioConfig = {
     school: "ICCT Colleges Cainta Campus",
     location: "Binangonan, Rizal",
     description: "I am a 4th-year Computer Engineering student at ICCT Colleges Cainta Campus, currently residing in Binangonan, Rizal. I have a strong passion for software development, modern web applications, and embedded IoT hardware systems. I enjoy creating practical solutions by writing clean, straightforward code and continuously exploring new technologies.",
-    paragraph2: "Throughout my studies, I have gained hands-on experience building web apps with TypeScript, Vite, and Tailwind CSS, mobile applications in Android Studio with Kotlin and Firebase, and programming microcontrollers like the ESP32 and Arduino with various sensors and communication protocols.",
+    paragraph2: "Throughout my studies, I have gained hands-on experience building web apps with TypeScript, mobile applications in Android Studio with Kotlin and Firebase, and programming microcontrollers like the ESP32 and Arduino with various sensors and communication protocols.",
     highlights: [
       { label: "Status", value: "4th Year College Student" },
       { label: "Course", value: "B.S. in Computer Engineering" },
@@ -42,8 +42,6 @@ const PortfolioConfig = {
       category: "software & web",
       skills: [
         "typescript",
-        "vite",
-        "tailwind css",
         "kotlin",
         "java / oop",
         "c / c++",
@@ -58,13 +56,10 @@ const PortfolioConfig = {
       skills: [
         "android studio",
         "firebase auth",
-        "cloud firestore",
         "firebase cloud messaging",
         "figma ui/ux",
-        "agile / scrum",
         "system architecture",
-        "uml modeling",
-        "docker"
+        "uml modeling"
       ]
     },
     {
@@ -74,10 +69,6 @@ const PortfolioConfig = {
         "esp32",
         "arduino",
         "embedded c / c++",
-        "vl53l0x tof sensors",
-        "max30102 pulse oximeter",
-        "i2c / spi / uart",
-        "tca9548a multiplexing",
         "oled displays",
         "circuit schematics",
         "digital logic"
@@ -89,45 +80,44 @@ const PortfolioConfig = {
       skills: [
         "gemini",
         "chatgpt",
-        "google antigravity"
+        "antigravity"
       ]
     }
   ],
 
   works: [
     {
-      id: "featured-app",
-      title: "Featured Web Application",
-      category: "Full-Stack Web App",
+      id: "tanggapan-ng-kaligtasan",
+      title: "Tanggapan ng Kaligtasan",
+      subtitle: "Disaster Risk Map — Rizal (Cainta → Binangonan)",
+      category: "Disaster Risk & Emergency Mapping Web App",
       year: "2024 — 2026",
-      summary: "A modern, responsive web application engineered with clean component architecture, fast load times, and intuitive user workflow.",
-      description: "This web application was designed and developed to deliver a smooth and practical digital experience. It features responsive layouts, real-time data handling, and clean code principles using modern development toolchains.",
-      tags: ["TypeScript", "Vite", "Tailwind CSS", "Firebase", "Web App"],
+      summary: "An interactive disaster risk map web app engineered to guide communities to safety during calamities such as floods, fires, and earthquakes.",
+      description: "Ang application na ito ay binuo upang tumulong at magbigay ng mabilisang gabay sa mga mamamayan sa oras ng sakuna. Ipinapakita nito kung saan ang mga ligtas na evacuation centers, safe zones, at mga mapanganib na danger zones sa lalawigan ng Rizal (mula Cainta hanggang Binangonan) gamit ang interactive map at live location tracking.",
+      tags: ["TypeScript", "Leaflet Maps", "Geolocation API", "Tailwind CSS", "Firebase"],
       stats: [
-        { label: "Framework", value: "Vite + TS" },
-        { label: "Styling", value: "Tailwind CSS" },
-        { label: "Status", value: "Active Build" }
+        { label: "Coverage", value: "Cainta → Binangonan" },
+        { label: "Modes", value: "Flood / Fire / Earthquake" },
+        { label: "Live GPS", value: "Location & Follow Me" }
       ],
       githubUrl: "https://github.com",
       demoUrl: "#",
-      image: "./assets/donor-photo.jpg" // Placeholder for web app screenshot
+      image: "./assets/tanggapan-ng-kaligtasan.png"
     }
   ],
 
   experience: [
     {
       period: "2024 — Present",
-      role: "Web Application & IoT Systems Developer",
-      organization: "Academic & Personal Projects",
-      location: "Binangonan, Rizal",
-      description: "Designing and developing responsive web applications using Vite, TypeScript, and Tailwind CSS. Implementing backend services with Firebase and creating connected IoT prototypes using ESP32 microcontrollers."
+      role: "Web App & Disaster Risk Systems Developer",
+      organization: "Tanggapan ng Kaligtasan Project • Binangonan, Rizal",
+      description: "Architected and built the 'Tanggapan ng Kaligtasan' disaster risk mapping web application for Rizal municipalities (Cainta to Binangonan), integrating interactive geospatial maps, multi-disaster filtering (Flood, Fire, Earthquake), and live location tracking."
     },
     {
       period: "2022 — 2024",
       role: "Computer Engineering Student Developer",
-      organization: "ICCT Colleges Cainta Campus",
-      location: "Cainta, Rizal",
-      description: "Built foundational skills in Object-Oriented Programming (Java, C++), database design with SQL, and developed early frontend web interfaces that led to current web application projects."
+      organization: "ICCT Colleges Cainta Campus • Cainta, Rizal",
+      description: "Gained core fundamentals in Object-Oriented Programming (Java, C++), database management with SQL, and building early software and microcontroller systems that led to full-stack web app development."
     }
   ],
 
@@ -136,7 +126,7 @@ const PortfolioConfig = {
       period: "2021 — 2025 (Expected Graduation)",
       degree: "Bachelor of Science in Computer Engineering (4th Year)",
       institution: "ICCT Colleges Cainta Campus",
-      details: "Comprehensive coursework in Embedded Systems, Logic Circuits, Computer Architecture, Data Structures, and Software Development."
+      details: "Comprehensive coursework in Embedded Systems, Logic Circuits, Computer Architecture, Data Structures & Algorithms, and Software Engineering."
     }
   ]
 };
