@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f4f4f2" />
-  <title>Donor — Software Engineer & Full-Stack Systems Developer</title>
-  <meta name="description" content="Donor — Software Engineer & Full-Stack Developer. Hand-crafted systems, clean architecture, edge-native web performance." />
+  <title>Donor — Computer Engineering Student & Developer | Binangonan, Rizal</title>
+  <meta name="description" content="Donor — 4th Year Computer Engineering Student at ICCT Colleges Cainta Campus, Binangonan, Rizal. Web applications, software & embedded IoT systems." />
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Donor — Software Engineer & Full-Stack Systems Developer" />
-  <meta property="og:description" content="Hand-crafted code, scalable architecture, edge-native web performance." />
-  <meta property="og:image" content="./assets/favicon.svg" />
+  <meta property="og:title" content="Donor — Computer Engineering Student & Developer" />
+  <meta property="og:description" content="4th-year Computer Engineering student at ICCT Colleges Cainta Campus. Web applications, software & embedded systems." />
+  <meta property="og:image" content="./assets/donor-photo.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Early Theme Initialization to prevent flicker -->
+  <!-- Early Theme Initialization -->
   <script>
     (function() {
       try {
@@ -74,7 +74,7 @@
         <span class="measure text-accent" id="nav-xray-status" style="display:none;">X-RAY ACTIVE</span>
       </div>
 
-      <!-- Action Pill: X-Ray Blueprint, Theme Switch, Resume, Menu -->
+      <!-- Action Pill: X-Ray Blueprint, Theme Switch, Contact & Menu -->
       <div class="nav-pill">
         <!-- X-Ray Mode Toggle Button -->
         <button type="button" id="xray-toggle" class="nav-item-btn" title="X-Ray Blueprint mode: Inspect grid & architecture" aria-pressed="false" data-cursor="hover" data-xray="[Btn: X-Ray 44px]">
@@ -91,10 +91,10 @@
           </svg>
         </button>
 
-        <!-- Resume Modal Trigger -->
-        <button type="button" class="nav-item-btn open-resume-btn" style="background:var(--surface);" data-cursor="hover">
-          <span>CV / Resume</span>
-        </button>
+        <!-- Direct Contact Link -->
+        <a href="#contact" class="nav-item-btn" style="background:var(--surface);" data-cursor="hover">
+          <span>Contact</span>
+        </a>
 
         <!-- Menu Toggle Button -->
         <button type="button" id="menu-toggle" class="nav-item-btn icon-only" aria-label="Open main menu" aria-expanded="false" data-cursor="hover">
@@ -111,7 +111,7 @@
   <div id="main-menu-dialog" class="main-menu-dialog" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="shell" style="width:100%;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
-        <span class="measure" style="color:var(--bg); opacity:0.6;">PORTFOLIO INDEX</span>
+        <span class="measure" style="color:var(--bg); opacity:0.6;">INDEX</span>
         <button type="button" id="menu-close-btn" class="nav-item-btn" style="color:var(--bg); border:1px solid rgba(255,255,255,0.2);" data-cursor="hover">
           <span>Close [ESC]</span>
         </button>
@@ -119,25 +119,23 @@
 
       <nav aria-label="Main Navigation">
         <ul class="menu-chapters">
-          <li><a href="#about" class="menu-link" data-cursor="hover"><span class="measure text-accent">01</span><span>About & Bio</span></a></li>
-          <li><a href="#tech" class="menu-link" data-cursor="hover"><span class="measure text-accent">02</span><span>Developer Tech Stack</span></a></li>
-          <li><a href="#projects" class="menu-link" data-cursor="hover"><span class="measure text-accent">03</span><span>Engineering Projects</span></a></li>
-          <li><a href="#the-build" class="menu-link" data-cursor="hover"><span class="measure text-accent">04</span><span>The Engineering Lifecycle</span></a></li>
-          <li><a href="#experience" class="menu-link" data-cursor="hover"><span class="measure text-accent">05</span><span>Experience & Education</span></a></li>
-          <li><a href="#estimator" class="menu-link" data-cursor="hover"><span class="measure text-accent">06</span><span>Project Scope Estimator</span></a></li>
-          <li><a href="#contact" class="menu-link" data-cursor="hover"><span class="measure text-accent">07</span><span>Contact & Dispatch</span></a></li>
+          <li><a href="#about" class="menu-link" data-cursor="hover"><span class="measure text-accent">01</span><span>About Me</span></a></li>
+          <li><a href="#toolkit" class="menu-link" data-cursor="hover"><span class="measure text-accent">02</span><span>Technical Competencies</span></a></li>
+          <li><a href="#works" class="menu-link" data-cursor="hover"><span class="measure text-accent">03</span><span>Works</span></a></li>
+          <li><a href="#experience" class="menu-link" data-cursor="hover"><span class="measure text-accent">04</span><span>Experience & Education</span></a></li>
+          <li><a href="#contact" class="menu-link" data-cursor="hover"><span class="measure text-accent">05</span><span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
 
     <div class="shell menu-footer" style="width:100%;">
       <div>
-        <span class="measure" style="display:block; margin-bottom:4px; opacity:0.6;">Direct Line</span>
-        <button type="button" class="copy-email-btn link" style="color:var(--bg); font-weight:500;" data-cursor="hover">donor.developer.pro@gmail.com</button>
+        <span class="measure" style="display:block; margin-bottom:4px; opacity:0.6;">Direct Email</span>
+        <button type="button" class="copy-email-btn link" style="color:var(--bg); font-weight:500;" data-cursor="hover">donorken6@gmail.com</button>
       </div>
 
       <div style="display:flex; align-items:center; gap:1.5rem;">
-        <button type="button" class="open-resume-btn" style="color:var(--bg); text-decoration:underline; font-size:0.85rem;" data-cursor="hover">View Resume</button>
+        <span class="measure" style="color:var(--bg); opacity:0.6;">Binangonan, Rizal</span>
         <div style="display:flex; align-items:center; gap:0.5rem; border:1px solid rgba(255,255,255,0.2); padding:0.25rem 0.5rem; border-radius:9999px;">
           <label style="font-size:0.75rem; cursor:pointer;"><input type="radio" name="site-theme" value="light" style="margin-right:4px;">Light</label>
           <label style="font-size:0.75rem; cursor:pointer;"><input type="radio" name="site-theme" value="dark" style="margin-right:4px;">Dark</label>
@@ -149,313 +147,318 @@
   <!-- MAIN VIEWPORT CONTENT -->
   <main id="main-content" class="frame">
 
-    <!-- 1. DEVELOPER HERO SECTION -->
-    <section id="hero" class="hero-section" data-xray="[Section: Developer Hero]">
+    <!-- 1. HERO SECTION WITH DONOR'S PHOTO -->
+    <section id="hero" class="hero-section" data-xray="[Section: Front Hero]">
       <div class="shell">
         
         <div class="hero-meta-top">
-          <span class="measure live-coords">14.5995° N, 120.9842° E — Manila / Remote</span>
-          <span class="measure text-accent">Available for Full-Time Roles & Consulting</span>
+          <span class="measure live-coords">14.4644° N, 121.1923° E — Binangonan, Rizal</span>
+          <span class="measure text-accent">4th Year Computer Engineering • ICCT Colleges Cainta</span>
         </div>
 
-        <div class="hero-layout">
-          <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">SOFTWARE ENGINEER & BUILDER</span>
-            <h1 class="display-1" data-xray="[H1: Display-1 / Developer]">
+        <div class="grid-cols-12" style="align-items:center; gap:2.5rem;">
+          
+          <!-- Left: Intro & Bio Details -->
+          <div style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 7; }">
+            <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">COMPUTER ENGINEERING STUDENT & DEVELOPER</span>
+            <h1 class="display-1" style="margin-bottom:1.5rem;" data-xray="[H1: Display]">
               Donor<span class="text-accent">.</span>
             </h1>
-          </div>
-
-          <div class="hero-lead-box">
-            <p class="lead" data-xray="[P: Lead / Bio]">
-              Full-Stack Software Engineer specializing in distributed backends, resilient APIs, and edge-native web architecture. Hand-crafted code with zero page-builder bloat.
+            
+            <p class="lead" style="margin-bottom:2rem; max-width:44ch;" data-xray="[P: Lead]">
+              4th-year Computer Engineering student at ICCT Colleges Cainta Campus. Building responsive web applications and embedded IoT solutions with clean, straightforward code.
             </p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary" data-cursor="hover" data-xray="[Btn: Primary]">
-                <span>View Projects</span>
+              <a href="#works" class="btn btn-primary" data-cursor="hover" data-xray="[Btn: Works]">
+                <span>View Works</span>
                 <span class="btn-dot" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
                 </span>
               </a>
 
-              <button type="button" class="btn btn-secondary open-resume-btn" data-cursor="hover" data-xray="[Btn: Resume]">
-                <span>CV / Resume</span>
-                <span class="btn-dot" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
-                </span>
-              </button>
+              <a href="#about" class="btn btn-secondary" data-cursor="hover" data-xray="[Btn: About]">
+                <span>About Me</span>
+              </a>
 
               <a href="#contact" class="link measure text-accent" style="margin-left:0.5rem;" data-cursor="hover">Contact Me ↗</a>
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-
-    <!-- 2. ARCHITECTURAL METRICS ROW -->
-    <section class="shell" data-xray="[Section: Developer Metrics]">
-      <div class="metrics-row">
-        <div class="metric-cell" data-xray="[Metric: 01]">
-          <div class="metric-val">04+</div>
-          <div class="metric-label">Years Engineering</div>
-          <div class="metric-note">Full-stack & distributed systems</div>
-        </div>
-        <div class="metric-cell" data-xray="[Metric: 02]">
-          <div class="metric-val">30+</div>
-          <div class="metric-label">Repositories & Deploys</div>
-          <div class="metric-note">Clean, audited codebases</div>
-        </div>
-        <div class="metric-cell" data-xray="[Metric: 03]">
-          <div class="metric-val">&lt;50ms</div>
-          <div class="metric-label">Edge Response</div>
-          <div class="metric-note">Cloudflare Workers serverless</div>
-        </div>
-        <div class="metric-cell" data-xray="[Metric: 04]">
-          <div class="metric-val">100%</div>
-          <div class="metric-label">Core Web Vitals</div>
-          <div class="metric-note">Lighthouse performance benchmarks</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. ABOUT ME & ENGINEERING PHILOSOPHY -->
-    <section id="about" class="principles-section" data-xray="[Section: About Me]">
-      <div class="shell">
-        <div class="principles-lead-wrap">
-          <span class="measure text-accent" style="display:block; margin-bottom:1rem;">ABOUT DONOR</span>
-          <h2 class="display-2" style="max-width:30ch;">
-            I construct software and web systems that land with immediate impact and hold up under heavy production scale.
-          </h2>
-          <p class="lead" style="max-width:48ch; margin-top:1.5rem;">
-            From database schemas and idempotent API microservices to high-speed tactile frontends, I combine Computer Engineering fundamentals with modern edge cloud architecture.
-          </p>
-        </div>
-
-        <!-- 4 Engineering Principles -->
-        <div class="principles-grid">
-          <div class="principle-card" data-xray="[Principle: 01]">
-            <div class="measure principle-num">01 / PERFORMANCE</div>
-            <h3 class="display-4">No site builder bloat.</h3>
-            <p>No generic templates or hundreds of third-party plugins. Every component is designed and hand-coded to fit performance requirements and clean semantics.</p>
-          </div>
-
-          <div class="principle-card" data-xray="[Principle: 02]">
-            <div class="measure principle-num">02 / CRAFTSMANSHIP</div>
-            <h3 class="display-4">Hand-crafted clean code.</h3>
-            <p>Lean, readable, and strictly audited source code. That is why applications load in milliseconds, consume minimal memory, and maintain high Lighthouse scores.</p>
-          </div>
-
-          <div class="principle-card" data-xray="[Principle: 03]">
-            <div class="measure principle-num">03 / ARCHITECTURE</div>
-            <h3 class="display-4">Systems-first mindset.</h3>
-            <p>A beautiful UI is only as good as the architecture underneath. Robust error handling, idempotent APIs, and structured data flow come first.</p>
-          </div>
-
-          <div class="principle-card" data-xray="[Principle: 04]">
-            <div class="measure principle-num">04 / STANDARDS</div>
-            <h3 class="display-4">Built for longevity.</h3>
-            <p>Avoiding fleeting framework churn in favor of solid web standards (HTML5, modern CSS, strict TypeScript) that stand firm for years.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. COMPLETE DEVELOPER TECH STACK MATRIX -->
-    <section id="tech" class="tech-section" data-xray="[Section: Developer Tech Stack]">
-      <div class="shell">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
-          <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">SKILLS & TOOLCHAIN</span>
-            <h2 class="display-2">Technical Competencies<span class="text-accent">.</span></h2>
-          </div>
-          <p class="lead" style="max-width:38ch;">
-            Audited toolchains and runtimes evaluated for performance, reliability, and zero-bloat runtime footprints.
-          </p>
-        </div>
-
-        <div class="tech-grid">
-          <!-- Languages -->
-          <div class="tech-card" data-xray="[Tech: Languages]">
-            <span class="tech-cat">Core Languages</span>
-            <h4 class="tech-name">TypeScript & JavaScript</h4>
-            <p class="tech-note">Strict null checks, generics, asynchronous I/O, event loop, and DOM architecture.</p>
-            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
-              <span class="tag-pill">Python</span>
-              <span class="tag-pill">C / C++</span>
-              <span class="tag-pill">SQL</span>
-            </div>
-          </div>
-
-          <!-- Frontend Architecture -->
-          <div class="tech-card" data-xray="[Tech: Frontend]">
-            <span class="tech-cat">Frontend Architecture</span>
-            <h4 class="tech-name">React.js & Next.js</h4>
-            <p class="tech-note">Component lifecycle, state machines, server components, and edge server rendering.</p>
-            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
-              <span class="tag-pill">Tailwind CSS</span>
-              <span class="tag-pill">Vue.js</span>
-              <span class="tag-pill">WebGL</span>
-            </div>
-          </div>
-
-          <!-- Backend & Systems -->
-          <div class="tech-card" data-xray="[Tech: Backend]">
-            <span class="tech-cat">Backend & APIs</span>
-            <h4 class="tech-name">Node.js & Express</h4>
-            <p class="tech-note">RESTful routing, WebSocket streams, authentication pipelines, and rate limiters.</p>
-            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
-              <span class="tag-pill">FastAPI</span>
-              <span class="tag-pill">WebSockets</span>
-              <span class="tag-pill">GraphQL</span>
-            </div>
-          </div>
-
-          <!-- Databases & Cloud -->
-          <div class="tech-card" data-xray="[Tech: Cloud/DB]">
-            <span class="tech-cat">Databases & Edge Cloud</span>
-            <h4 class="tech-name">PostgreSQL & Redis</h4>
-            <p class="tech-note">Relational modeling, indexing, in-memory caching, and Cloudflare Pages/Workers.</p>
-            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
-              <span class="tag-pill">Cloudflare</span>
-              <span class="tag-pill">MongoDB</span>
-              <span class="tag-pill">Docker</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. "THE BUILD" INTERACTIVE PROCESS STAGE -->
-    <section id="the-build" class="build-section" data-xray="[Section: Engineering Lifecycle]">
-      <div class="shell">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-          <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">THE ENGINEERING LIFECYCLE</span>
-            <h2 class="display-2">From Logic Spec to Edge Deploy<span class="text-accent">.</span></h2>
-          </div>
-          <div class="measure" style="text-align:right;">
-            <span>LIFECYCLE</span>
-            <div id="build-progress-percent" style="font-size:1.5rem; font-weight:700; color:var(--ink);">013%</div>
-          </div>
-        </div>
-
-        <div class="build-stage-container">
-          <!-- Text Stage Details -->
-          <div>
-            <div class="measure" style="margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
-              <span id="build-stage-step" class="text-accent">01</span>
-              <span style="opacity:0.4;">—</span>
-              <span id="build-stage-total">08</span>
-            </div>
-
-            <h3 id="build-stage-title" class="display-3" style="margin-bottom:1rem;">System Specs & Logic.</h3>
-            <p id="build-stage-desc" class="lead" style="margin-bottom:2rem;">
-              Every robust project starts with defined problem requirements, user flows, and mathematical constraints.
-            </p>
-
-            <div class="build-controls-row">
-              <div class="build-dots" id="build-step-dots"></div>
-
-              <div style="display:flex; gap:0.5rem;">
-                <button type="button" id="build-prev-btn" class="nav-item-btn icon-only" style="border:1px solid var(--border);" aria-label="Previous step" data-cursor="hover">
-                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
-                </button>
-                <button type="button" id="build-next-btn" class="nav-item-btn icon-only" style="border:1px solid var(--border);" aria-label="Next step" data-cursor="hover">
-                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
-                </button>
+          <!-- Right: Donor's Official Photo Card -->
+          <div class="hero-photo-wrapper" style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 5; }">
+            <div class="hero-photo-card" data-xray="[Card: Portrait / FIG. 01]">
+              <div class="hero-photo-img-box">
+                <img src="./assets/donor-photo.jpg" alt="Donor — Computer Engineering Student at ICCT Colleges Cainta" class="hero-photo-img" loading="eager" />
+              </div>
+              <div class="hero-photo-caption">
+                <span class="measure text-accent">FIG. 01 — DONOR</span>
+                <span class="measure">BINANGONAN, RIZAL</span>
               </div>
             </div>
           </div>
 
-          <!-- Dynamic Visual Canvas Container -->
-          <div class="build-canvas-box" id="build-canvas-container" data-xray="[Canvas: Lifecycle Visualizer]">
-            <!-- Rendered by js/build-slider.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="principles-section" data-xray="[Section: About Me]">
+      <div class="shell">
+        <div class="principles-lead-wrap">
+          <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">BIOGRAPHY</span>
+          <h2 class="display-2" style="max-width:28ch;">About Me<span class="text-accent">.</span></h2>
+          
+          <div style="margin-top:2rem; max-width:56ch; display:flex; flex-direction:column; gap:1.25rem;">
+            <p class="lead" style="color:var(--ink-2); line-height:1.7;">
+              I am a 4th-year Computer Engineering student at ICCT Colleges Cainta Campus, currently residing in Binangonan, Rizal. I have a strong passion for software development, modern web applications, and embedded IoT hardware systems. I enjoy creating practical solutions by writing clean, straightforward code and continuously exploring new technologies.
+            </p>
+            <p style="font-size:1rem; color:var(--ink-muted); line-height:1.7;">
+              Throughout my studies, I have gained hands-on experience building web apps with TypeScript, Vite, and Tailwind CSS, mobile applications in Android Studio with Kotlin and Firebase, and programming microcontrollers like the ESP32 and Arduino with various sensors and communication protocols.
+            </p>
           </div>
+
+          <!-- 4 Highlights Box -->
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.5rem; margin-top:3rem;">
+            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+              <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">STATUS</span>
+              <span style="font-weight:600; font-size:1.05rem;">4th Year College Student</span>
+            </div>
+            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+              <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">COURSE</span>
+              <span style="font-weight:600; font-size:1.05rem;">B.S. in Computer Engineering</span>
+            </div>
+            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+              <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">CAMPUS</span>
+              <span style="font-weight:600; font-size:1.05rem;">ICCT Colleges Cainta</span>
+            </div>
+            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+              <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">LOCATION</span>
+              <span style="font-weight:600; font-size:1.05rem;">Binangonan, Rizal</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- 6. FEATURED DEVELOPER PROJECTS -->
-    <section id="projects" class="projects-section" data-xray="[Section: Projects Showcase]">
+    <!-- 3. TECHNICAL COMPETENCIES (TOOLKIT) -->
+    <section id="toolkit" class="toolkit-section" data-xray="[Section: Toolkit]">
       <div class="shell">
-        <div class="projects-header-row">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
           <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">SELECTED REPOSITORIES</span>
-            <h2 class="display-2">Featured Projects<span class="text-accent">.</span></h2>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">TOOLKIT</span>
+            <h2 class="display-2">Technical Competencies<span class="text-accent">.</span></h2>
           </div>
-
-          <!-- Category Filter Pills -->
-          <div class="filter-pills" role="tablist" aria-label="Project filter">
-            <button type="button" class="filter-pill active" data-filter="all" data-cursor="hover">All (5)</button>
-            <button type="button" class="filter-pill" data-filter="Backend & Systems" data-cursor="hover">Backend</button>
-            <button type="button" class="filter-pill" data-filter="Frontend Architecture" data-cursor="hover">Frontend</button>
-            <button type="button" class="filter-pill" data-filter="Creative Engineering" data-cursor="hover">Creative</button>
-            <button type="button" class="filter-pill" data-filter="Full-Stack Web" data-cursor="hover">Full-Stack</button>
-          </div>
+          <span class="measure">Hardware, Software, Cloud & AI</span>
         </div>
 
-        <!-- Dynamic Projects Grid -->
-        <div class="projects-grid" id="projects-grid">
-          <!-- Populated dynamically by js/main.js -->
+        <div class="toolkit-grid">
+          
+          <!-- 01 Software & Web -->
+          <div class="toolkit-card" data-xray="[Toolkit: 01]">
+            <div>
+              <span class="toolkit-num">01</span>
+              <h3 class="toolkit-title">software & web</h3>
+              <ul class="toolkit-skill-list">
+                <li class="toolkit-skill-item">typescript</li>
+                <li class="toolkit-skill-item">vite</li>
+                <li class="toolkit-skill-item">tailwind css</li>
+                <li class="toolkit-skill-item">kotlin</li>
+                <li class="toolkit-skill-item">java / oop</li>
+                <li class="toolkit-skill-item">c / c++</li>
+                <li class="toolkit-skill-item">python</li>
+                <li class="toolkit-skill-item">sql</li>
+                <li class="toolkit-skill-item">git / github</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 02 Mobile, Cloud & Design -->
+          <div class="toolkit-card" data-xray="[Toolkit: 02]">
+            <div>
+              <span class="toolkit-num">02</span>
+              <h3 class="toolkit-title">mobile, cloud & design</h3>
+              <ul class="toolkit-skill-list">
+                <li class="toolkit-skill-item">android studio</li>
+                <li class="toolkit-skill-item">firebase auth</li>
+                <li class="toolkit-skill-item">cloud firestore</li>
+                <li class="toolkit-skill-item">firebase cloud messaging</li>
+                <li class="toolkit-skill-item">figma ui/ux</li>
+                <li class="toolkit-skill-item">agile / scrum</li>
+                <li class="toolkit-skill-item">system architecture</li>
+                <li class="toolkit-skill-item">uml modeling</li>
+                <li class="toolkit-skill-item">docker</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 03 Hardware & Embedded IoT -->
+          <div class="toolkit-card" data-xray="[Toolkit: 03]">
+            <div>
+              <span class="toolkit-num">03</span>
+              <h3 class="toolkit-title">hardware & embedded iot</h3>
+              <ul class="toolkit-skill-list">
+                <li class="toolkit-skill-item">esp32</li>
+                <li class="toolkit-skill-item">arduino</li>
+                <li class="toolkit-skill-item">embedded c / c++</li>
+                <li class="toolkit-skill-item">vl53l0x tof sensors</li>
+                <li class="toolkit-skill-item">max30102 pulse oximeter</li>
+                <li class="toolkit-skill-item">i2c / spi / uart</li>
+                <li class="toolkit-skill-item">tca9548a multiplexing</li>
+                <li class="toolkit-skill-item">oled displays</li>
+                <li class="toolkit-skill-item">circuit schematics</li>
+                <li class="toolkit-skill-item">digital logic</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 04 AI-Assisted Development & Tools -->
+          <div class="toolkit-card" data-xray="[Toolkit: 04]">
+            <div>
+              <span class="toolkit-num">04</span>
+              <h3 class="toolkit-title">ai-assisted development & tools</h3>
+              <ul class="toolkit-skill-list">
+                <li class="toolkit-skill-item">gemini</li>
+                <li class="toolkit-skill-item">chatgpt</li>
+                <li class="toolkit-skill-item">google antigravity</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- 7. EXPERIENCE & EDUCATION TIMELINE -->
-    <section id="experience" class="services-section" data-xray="[Section: Career & Education]">
+    <!-- 4. WORKS SECTION (REPLACED FEATURED PROJECTS) -->
+    <section id="works" class="projects-section" data-xray="[Section: Works]">
       <div class="shell">
-        <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">CAREER TRAJECTORY</span>
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+          <div>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">DEVELOPED APPLICATIONS</span>
+            <h2 class="display-2">Works<span class="text-accent">.</span></h2>
+          </div>
+          <span class="measure">Web Application & Engineering Project</span>
+        </div>
+
+        <!-- Featured Web App Showcase Box -->
+        <div class="works-showcase-box" data-xray="[Box: Featured Web App]">
+          
+          <!-- Left: App Details & Description -->
+          <div>
+            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+              <span class="measure text-accent">WEB APPLICATION</span>
+              <span class="measure">2024 — 2026</span>
+            </div>
+            
+            <h3 class="display-3" style="font-size:2rem; margin-bottom:1rem;">Featured Web Application</h3>
+            
+            <p class="lead" style="font-size:1.05rem; line-height:1.6; margin-bottom:1.5rem; color:var(--ink-2);">
+              A responsive web application built with modern web technologies, designed to provide a clean and practical user experience.
+            </p>
+
+            <p style="font-size:0.9rem; line-height:1.6; color:var(--ink-muted); margin-bottom:2rem;">
+              This web app was designed and developed to deliver a smooth and practical digital workflow. Built using modern frontend tooling with Vite, TypeScript, and Tailwind CSS, focusing on clean component architecture, responsive interface, and seamless data handling.
+            </p>
+
+            <!-- Tech Pills -->
+            <div style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:2rem;">
+              <span class="tag-pill">TypeScript</span>
+              <span class="tag-pill">Vite</span>
+              <span class="tag-pill">Tailwind CSS</span>
+              <span class="tag-pill">Firebase</span>
+              <span class="tag-pill">Responsive Web</span>
+            </div>
+
+            <div style="display:flex; align-items:center; gap:1rem;">
+              <a href="#contact" class="btn btn-primary" data-cursor="hover">
+                <span>Inquire About This App</span>
+                <span class="btn-dot">
+                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive App Preview Frame / Screenshot Area -->
+          <div class="works-preview-frame">
+            <div class="works-preview-bar">
+              <span style="width:8px; height:8px; border-radius:50%; background:#ff5f56; display:block;"></span>
+              <span style="width:8px; height:8px; border-radius:50%; background:#ffbd2e; display:block;"></span>
+              <span style="width:8px; height:8px; border-radius:50%; background:#27c93f; display:block;"></span>
+              <span class="measure" style="font-size:10px; margin-left:6px; opacity:0.6;">app-preview.live</span>
+            </div>
+            
+            <div class="works-preview-screen" id="app-screenshot-container">
+              <div style="max-width:280px; padding:1.5rem; background:var(--bg); border:1px solid var(--border); border-radius:var(--radius-md); box-shadow:0 10px 25px rgba(0,0,0,0.04);">
+                <div style="display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; background:rgba(235,58,34,0.1); color:var(--accent); margin:0 auto 1rem;">
+                  <svg width="22" height="22" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"></path></svg>
+                </div>
+                <div class="measure text-accent" style="font-size:11px; margin-bottom:4px;">WEB APPLICATION UI</div>
+                <div style="font-size:13px; font-weight:600; color:var(--ink);">Clean & Responsive Interface</div>
+                <div class="measure" style="font-size:9px; margin-top:8px; opacity:0.6;">Vite • TypeScript • Tailwind CSS</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE & EDUCATION -->
+    <section id="experience" class="services-section" data-xray="[Section: Experience & Education]">
+      <div class="shell">
+        <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">BACKGROUND</span>
         <h2 class="display-2">Experience & Education<span class="text-accent">.</span></h2>
 
         <div class="services-list">
           
           <div class="service-row" data-xray="[Timeline: 01]">
-            <div class="service-num">2024 — NOW</div>
+            <div class="service-num">2024 — PRESENT</div>
             <div class="service-title-box">
-              <h3>Lead Full-Stack Systems Engineer</h3>
-              <span class="service-subtitle">Independent & Open Source • Remote</span>
+              <h3>Web App Development & IoT Systems</h3>
+              <span class="service-subtitle">Academic & Personal Projects • Binangonan, Rizal</span>
             </div>
             <p class="service-desc">
-              Architecting bespoke web applications, resilient edge APIs, and high-performance frontend interfaces. Providing system audits, security checks, and code optimization.
+              Designing and developing responsive web applications using Vite, TypeScript, and Tailwind CSS. Implementing backend services with Firebase and creating connected IoT prototypes using ESP32 microcontrollers.
             </p>
             <div class="service-deliverables">
-              <span class="tag-pill">Edge APIs</span>
+              <span class="tag-pill">Web Apps</span>
               <span class="tag-pill">TypeScript</span>
-              <span class="tag-pill">System Audits</span>
+              <span class="tag-pill">ESP32</span>
             </div>
           </div>
 
           <div class="service-row" data-xray="[Timeline: 02]">
             <div class="service-num">2022 — 2024</div>
             <div class="service-title-box">
-              <h3>Full-Stack Software Engineer</h3>
-              <span class="service-subtitle">Technology Solutions Enterprise • Manila</span>
+              <h3>Computer Engineering Student Developer</h3>
+              <span class="service-subtitle">ICCT Colleges Cainta Campus • Cainta, Rizal</span>
             </div>
             <p class="service-desc">
-              Engineered scalable REST microservices, database schemas, and redesigned the core customer portal, reducing bundle size by 42% and API response times by 35%.
+              Built foundational skills in Object-Oriented Programming (Java, C++), database design with SQL, and developed early frontend web interfaces that led to current web application projects.
             </p>
             <div class="service-deliverables">
-              <span class="tag-pill">React</span>
-              <span class="tag-pill">Node.js</span>
-              <span class="tag-pill">PostgreSQL</span>
+              <span class="tag-pill">OOP</span>
+              <span class="tag-pill">Java / C++</span>
+              <span class="tag-pill">Database</span>
             </div>
           </div>
 
           <div class="service-row" data-xray="[Timeline: 03]">
             <div class="service-num">EDUCATION</div>
             <div class="service-title-box">
-              <h3>B.S. in Computer Engineering</h3>
-              <span class="service-subtitle">College of Engineering & Architecture • Honors</span>
+              <h3>B.S. in Computer Engineering (4th Year)</h3>
+              <span class="service-subtitle">ICCT Colleges Cainta Campus</span>
             </div>
             <p class="service-desc">
-              Rigorous curriculum covering Computer Architecture, Microprocessor Systems, Data Structures & Algorithms, Network Security, and Distributed Systems.
+              Focused coursework in Embedded Systems, Logic Circuits, Computer Architecture, Data Structures & Algorithms, and Software Development.
             </p>
             <div class="service-deliverables">
-              <span class="tag-pill">Algorithms</span>
-              <span class="tag-pill">Hardware / Systems</span>
-              <span class="tag-pill">Honors</span>
+              <span class="tag-pill">Embedded IoT</span>
+              <span class="tag-pill">Logic Circuits</span>
+              <span class="tag-pill">4th Year</span>
             </div>
           </div>
 
@@ -463,160 +466,22 @@
       </div>
     </section>
 
-    <!-- 8. INTERACTIVE PROJECT SCOPE ESTIMATOR -->
-    <section id="estimator" class="estimator-section" data-xray="[Section: Collaboration Estimator]">
-      <div class="shell">
-        <div>
-          <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">COLLABORATION ESTIMATOR</span>
-          <h2 class="display-2">Estimate Project Scope & Stack<span class="text-accent">.</span></h2>
-          <p class="lead" style="max-width:44ch; margin-top:0.75rem;">
-            Planning a new software product or system overhaul? Select your parameters below to generate estimated timelines and architecture.
-          </p>
-        </div>
-
-        <div class="estimator-card" id="project-estimator-app">
-          <div class="estimator-grid">
-            
-            <!-- Estimator Controls -->
-            <div>
-              <span class="estimator-group-title">01 / Project Archetype</span>
-              <div class="radio-tile-group">
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-type" value="webapp" checked class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Full-Stack Web App</span>
-                    <span class="tile-desc">Interactive SPA/PWA with API integrations</span>
-                  </div>
-                </label>
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-type" value="portfolio" class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">High-Performance Web Presence</span>
-                    <span class="tile-desc">High-speed editorial site with micro-motion</span>
-                  </div>
-                </label>
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-type" value="systems" class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Backend Microservices</span>
-                    <span class="tile-desc">Resilient APIs, DB modeling, and edge workers</span>
-                  </div>
-                </label>
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-type" value="design-system" class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Design Token System</span>
-                    <span class="tile-desc">Accessible token library & component specs</span>
-                  </div>
-                </label>
-              </div>
-
-              <span class="estimator-group-title">02 / Target Scope</span>
-              <div class="radio-tile-group">
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-scope" value="small" class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Focused MVP</span>
-                    <span class="tile-desc">1 — 3 essential primary views & endpoints</span>
-                  </div>
-                </label>
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-scope" value="medium" checked class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Standard Scope</span>
-                    <span class="tile-desc">4 — 7 comprehensive views & flows</span>
-                  </div>
-                </label>
-                <label class="radio-tile" data-cursor="hover">
-                  <input type="radio" name="est-scope" value="large" class="sr-only" />
-                  <div class="tile-body">
-                    <span class="tile-name">Enterprise Platform</span>
-                    <span class="tile-desc">Extensive multi-user dashboard & systems</span>
-                  </div>
-                </label>
-              </div>
-
-              <span class="estimator-group-title">03 / Key Capabilities</span>
-              <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.5rem;">
-                <label class="tag-pill" style="cursor:pointer; display:flex; align-items:center; gap:0.35rem; padding:0.4rem 0.8rem;" data-cursor="hover">
-                  <input type="checkbox" name="est-features" value="Cloudflare Edge CDN" checked />
-                  <span>Cloudflare Edge Deployment</span>
-                </label>
-                <label class="tag-pill" style="cursor:pointer; display:flex; align-items:center; gap:0.35rem; padding:0.4rem 0.8rem;" data-cursor="hover">
-                  <input type="checkbox" name="est-features" value="Real-time WebSockets" />
-                  <span>Real-time Telemetry / Sockets</span>
-                </label>
-                <label class="tag-pill" style="cursor:pointer; display:flex; align-items:center; gap:0.35rem; padding:0.4rem 0.8rem;" data-cursor="hover">
-                  <input type="checkbox" name="est-features" value="Dark/Light Mode Tokens" checked />
-                  <span>Adaptive Dark/Light Themes</span>
-                </label>
-                <label class="tag-pill" style="cursor:pointer; display:flex; align-items:center; gap:0.35rem; padding:0.4rem 0.8rem;" data-cursor="hover">
-                  <input type="checkbox" name="est-features" value="Payment Gateways" />
-                  <span>Payment Gateway Integration</span>
-                </label>
-              </div>
-
-              <span class="estimator-group-title">04 / Delivery Pace</span>
-              <div style="display:flex; gap:1rem;">
-                <label style="font-size:0.85rem; cursor:pointer;"><input type="radio" name="est-speed" value="standard" checked style="margin-right:4px;">Standard Pace</label>
-                <label style="font-size:0.85rem; cursor:pointer;"><input type="radio" name="est-speed" value="accelerated" style="margin-right:4px;">Accelerated Sprint</label>
-              </div>
-            </div>
-
-            <!-- Estimator Live Output Summary -->
-            <div class="estimator-summary-panel" data-xray="[Panel: Calculator]">
-              <div>
-                <span class="measure text-accent" style="display:block; margin-bottom:1rem;">ESTIMATED METRICS</span>
-
-                <div class="est-output-box">
-                  <span class="measure">Estimated Delivery Window</span>
-                  <div class="est-output-val" id="est-timeline-val">3.5 - 4.5 Weeks</div>
-                </div>
-
-                <div class="est-output-box">
-                  <span class="measure">Architecture Classification</span>
-                  <div class="est-output-val" id="est-tier-val" style="font-size:1.1rem;">Full-Stack Application</div>
-                </div>
-
-                <div class="est-output-box">
-                  <span class="measure">Recommended Tech Stack</span>
-                  <div class="est-output-val" id="est-stack-val" style="font-size:1rem; font-family:var(--font-mono); color:var(--ink-2);">
-                    React / Next.js + Node.js + Edge API
-                  </div>
-                </div>
-              </div>
-
-              <div style="margin-top:2rem;">
-                <button type="button" id="est-apply-btn" class="btn btn-primary" style="width:100%; justify-content:center;" data-cursor="hover">
-                  <span>Populate Scope to Contact Form</span>
-                  <span class="btn-dot">
-                    <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
-                  </span>
-                </button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. CONTACT & DISPATCH -->
-    <section id="contact" class="contact-section" data-xray="[Section: Contact / Dispatch]">
+    <!-- 6. CONTACT & DISPATCH -->
+    <section id="contact" class="contact-section" data-xray="[Section: Contact]">
       <div class="shell">
         <div class="contact-layout">
           
           <div>
             <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">GET IN TOUCH</span>
-            <h2 class="display-2" style="margin-bottom:1.5rem;">Let's build something exceptional<span class="text-accent">.</span></h2>
+            <h2 class="display-2" style="margin-bottom:1.5rem;">Let's connect<span class="text-accent">.</span></h2>
             <p class="lead" style="margin-bottom:2.5rem;">
-              Have an engineering role, contract project, or technical problem to solve? I respond promptly to all messages.
+              Whether you have an inquiry, feedback, or a collaborative opportunity, feel free to drop me a message.
             </p>
 
             <div style="margin-bottom:2rem;">
               <span class="measure" style="display:block; margin-bottom:0.5rem;">DIRECT EMAIL</span>
               <button type="button" class="copy-email-btn btn btn-secondary" data-cursor="copy" data-xray="[Btn: Copy Email]">
-                <span style="font-family:var(--font-mono); font-size:0.9rem;">donor.developer.pro@gmail.com</span>
+                <span style="font-family:var(--font-mono); font-size:0.9rem;">donorken6@gmail.com</span>
                 <span class="btn-dot">
                   <svg width="12" height="12" viewBox="0 0 256 256" fill="currentColor"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
                 </span>
@@ -624,12 +489,8 @@
             </div>
 
             <div>
-              <span class="measure" style="display:block; margin-bottom:0.5rem;">ENGINEER CHANNELS</span>
-              <div style="display:flex; gap:1rem; font-family:var(--font-mono); font-size:0.85rem;">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link text-accent" data-cursor="hover">GitHub ↗</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="link text-accent" data-cursor="hover">LinkedIn ↗</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="link text-accent" data-cursor="hover">Twitter/X ↗</a>
-              </div>
+              <span class="measure" style="display:block; margin-bottom:0.5rem;">LOCATION</span>
+              <p class="measure" style="font-size:0.85rem; color:var(--ink-2);">Binangonan, Rizal, Philippines</p>
             </div>
           </div>
 
@@ -643,12 +504,12 @@
 
               <div class="form-group">
                 <label for="contact-email">Email Address</label>
-                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required />
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@gmail.com" required />
               </div>
 
               <div class="form-group">
-                <label for="contact-message">Inquiry / Project Scope</label>
-                <textarea id="contact-message" class="form-textarea" rows="6" placeholder="Describe the role, project goals, timeline, or engineering specs..." required></textarea>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-textarea" rows="6" placeholder="Your message or project inquiry..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary" style="align-self:flex-start;" data-cursor="hover">
@@ -665,12 +526,11 @@
         <!-- Footer Colophon -->
         <div class="footer-bottom">
           <div class="measure">
-            © <span id="colophon-year">2026</span> DONOR. ALL RIGHTS RESERVED. CRAFTED AT 14.5995° N, 120.9842° E.
+            © <span id="colophon-year">2026</span> DONOR. CRAFTED AT 14.4644° N, 121.1923° E — BINANGONAN, RIZAL.
           </div>
 
           <div class="footer-links">
             <a href="#hero" class="measure" data-cursor="hover">Back to Top ↑</a>
-            <button type="button" class="measure open-resume-btn" data-cursor="hover">Resume</button>
             <button type="button" class="measure copy-email-btn" data-cursor="hover">Copy Email</button>
             <span class="measure">Edge Hosted on Cloudflare</span>
           </div>
@@ -680,102 +540,6 @@
     </section>
 
   </main>
-
-  <!-- CASE STUDY DETAIL MODAL DRAWER -->
-  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-drawer">
-      <button type="button" id="project-modal-close" class="modal-close-btn" aria-label="Close project modal" data-cursor="hover">×</button>
-      <div id="project-modal-body"></div>
-    </div>
-  </div>
-
-  <!-- INTERACTIVE RESUME / CV MODAL -->
-  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-drawer">
-      <button type="button" id="resume-modal-close" class="modal-close-btn" aria-label="Close resume modal" data-cursor="hover">×</button>
-      
-      <div class="resume-view">
-        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1.5rem; border-bottom:1px solid var(--border); padding-bottom:1.5rem;">
-          <div>
-            <h2 class="display-3" style="font-size:2rem;">Donor</h2>
-            <p class="measure text-accent" style="font-size:0.85rem; margin-top:0.25rem;">Software Engineer & Full-Stack Systems Developer</p>
-            <p style="font-size:0.85rem; color:var(--ink-muted); margin-top:0.25rem;">donor.developer.pro@gmail.com • Manila, Philippines / Remote</p>
-          </div>
-          <button type="button" id="print-resume-btn" class="btn btn-secondary" style="font-size:0.75rem; padding:0.35rem 0.85rem;" data-cursor="hover">
-            <span>Print / Save PDF</span>
-          </button>
-        </div>
-
-        <div style="margin-bottom:1.5rem;">
-          <h4 class="measure" style="margin-bottom:0.5rem;">Executive Summary</h4>
-          <p style="font-size:0.9rem; line-height:1.6; color:var(--ink-2);">
-            Full-Stack Software Engineer with 4+ years of hands-on experience designing distributed backends, RESTful and WebSocket microservices, and accessible, high-performance web interfaces. Adept at TypeScript, React, Node.js, PostgreSQL, and serverless edge delivery with Cloudflare Workers.
-          </p>
-        </div>
-
-        <div style="margin-bottom:1.5rem;">
-          <h4 class="measure" style="margin-bottom:0.75rem;">Core Competencies & Stack</h4>
-          <div style="display:flex; flex-wrap:wrap; gap:0.35rem;">
-            <span class="tag-pill">TypeScript</span>
-            <span class="tag-pill">JavaScript</span>
-            <span class="tag-pill">Python</span>
-            <span class="tag-pill">C / C++</span>
-            <span class="tag-pill">React.js</span>
-            <span class="tag-pill">Next.js</span>
-            <span class="tag-pill">Node.js</span>
-            <span class="tag-pill">Express</span>
-            <span class="tag-pill">PostgreSQL</span>
-            <span class="tag-pill">Redis</span>
-            <span class="tag-pill">Docker</span>
-            <span class="tag-pill">Cloudflare Pages/Workers</span>
-            <span class="tag-pill">Git / CI/CD</span>
-            <span class="tag-pill">WCAG AAA Accessibility</span>
-          </div>
-        </div>
-
-        <div style="margin-bottom:1.5rem;">
-          <h4 class="measure" style="margin-bottom:0.75rem;">Experience</h4>
-          <div style="display:flex; flex-direction:column; gap:1rem;">
-            <div>
-              <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
-                <span>Lead Full-Stack Systems Engineer</span>
-                <span class="measure">2024 — Present</span>
-              </div>
-              <div class="measure" style="color:var(--accent);">Independent & Open Source • Remote</div>
-              <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
-                Architecting bespoke web applications, resilient edge APIs, and high-performance frontend interfaces. Providing system audits and code optimization.
-              </p>
-            </div>
-            <div>
-              <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
-                <span>Full-Stack Software Engineer</span>
-                <span class="measure">2022 — 2024</span>
-              </div>
-              <div class="measure" style="color:var(--accent);">Technology Solutions Enterprise • Manila</div>
-              <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
-                Engineered scalable REST microservices, database schemas, and redesigned the core customer portal, reducing bundle size by 42% and API response time by 35%.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-bottom:1.5rem;">
-          <h4 class="measure" style="margin-bottom:0.75rem;">Education</h4>
-          <div>
-            <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
-              <span>Bachelor of Science in Computer Engineering</span>
-              <span class="measure">Honors</span>
-            </div>
-            <div class="measure" style="color:var(--accent);">College of Engineering & Architecture</div>
-            <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
-              Focus on Microprocessors, Computer Architecture, Data Structures & Algorithms, Network Security, and Distributed Systems.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- TOAST FEEDBACK ELEMENT -->
   <div id="app-toast" class="app-toast" role="status" aria-live="polite">
@@ -788,8 +552,6 @@
   <script src="./js/audio.js"></script>
   <script src="./js/cursor.js"></script>
   <script src="./js/xray.js"></script>
-  <script src="./js/build-slider.js"></script>
-  <script src="./js/estimator.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

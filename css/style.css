@@ -403,17 +403,195 @@ img, svg {
   }
 }
 
-.hero-lead-box {
+/* Hero Photo Card */
+.hero-photo-wrapper {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-actions {
+.hero-photo-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface-card);
+  padding: 0.75rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+  transition: transform var(--trans), border-color var(--trans);
+}
+
+.hero-photo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--ink);
+}
+
+.hero-photo-img-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transition: transform 0.6s var(--ease-lens);
+}
+
+.hero-photo-card:hover .hero-photo-img {
+  transform: scale(1.03);
+}
+
+.hero-photo-caption {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  padding: 0.75rem 0.25rem 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+}
+
+/* Toolkit Grid & Cards */
+.toolkit-section {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.toolkit-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .toolkit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .toolkit-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.toolkit-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--trans);
+}
+
+.toolkit-card:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.toolkit-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.toolkit-title {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+}
+
+.toolkit-skill-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.toolkit-skill-item {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0;
+}
+
+.toolkit-skill-item::before {
+  content: "•";
+  color: var(--accent);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Works Showcase Layout */
+.works-showcase-box {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  transition: all var(--trans);
+}
+
+@media (min-width: 992px) {
+  .works-showcase-box {
+    grid-template-columns: 7fr 5fr;
+    align-items: center;
+  }
+}
+
+.works-preview-frame {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.works-preview-bar {
+  background: var(--bg);
+  padding: 0.6rem 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.works-preview-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 /* 7. ARCHITECTURAL METRICS ROW */

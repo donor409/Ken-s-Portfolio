@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
   copyEmailBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const email = config.profile.email || 'donor.developer.pro@gmail.com';
+      const email = config.profile.email || 'donorken6@gmail.com';
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(email).then(() => {
           window.showAppToast(`Copied ${email} to clipboard!`);
@@ -362,9 +362,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      const subject = encodeURIComponent(`Engineering Inquiry from ${name}`);
+      const subject = encodeURIComponent(`Message from ${name}`);
       const body = encodeURIComponent(`Sender: ${name} (${email})\n\nMessage:\n${message}`);
-      const mailtoUrl = `mailto:${config.profile.email}?subject=${subject}&body=${body}`;
+      const mailtoUrl = `mailto:${config.profile.email || 'donorken6@gmail.com'}?subject=${subject}&body=${body}`;
 
       window.location.href = mailtoUrl;
 
@@ -374,15 +374,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 11. Coordinates live jitter simulation
+  // 11. Coordinates live jitter simulation for Binangonan, Rizal
   const coordDisplay = document.querySelector('.live-coords');
   if (coordDisplay) {
     setInterval(() => {
-      const baseLat = 14.5995;
-      const baseLng = 120.9842;
+      const baseLat = 14.4644;
+      const baseLng = 121.1923;
       const jitterLat = (baseLat + (Math.random() - 0.5) * 0.0004).toFixed(4);
       const jitterLng = (baseLng + (Math.random() - 0.5) * 0.0004).toFixed(4);
-      coordDisplay.textContent = `${jitterLat}° N, ${jitterLng}° E — Manila / Remote`;
+      coordDisplay.textContent = `${jitterLat}° N, ${jitterLng}° E — Binangonan, Rizal`;
     }, 4500);
   }
 });
