@@ -1,6 +1,6 @@
 # donor. — Interactive Swiss Architectural Portfolio
 
-Isang high-performance, interactive professional portfolio na ginawa sa **VS Code** para kay **Donor** na may disenyo at interaction patterns na inspirasyon ng **[metic.studio](https://metic.studio/en)** (Paper & Ink aesthetic, Swiss typography, X-Ray blueprint mode, tactile sound synthesizer, at interactive build stages), na 100% handang i-deploy sa **Cloudflare Pages** (`*.pages.dev`) katulad ng **[ryan-portfolio-66k.pages.dev](https://ryan-portfolio-66k.pages.dev/)**.
+Isang high-performance, interactive professional portfolio na ginawa sa **VS Code** para kay **Donor** na may disenyo at interaction patterns na inspirasyon ng **[metic.studio](https://metic.studio/en)** (Paper & Ink aesthetic, Swiss typography, X-Ray blueprint mode, tactile sound synthesizer, at interactive build stages), na 100% handang i-deploy sa **Cloudflare Pages** (`*.pages.dev`)
 
 ---
 
