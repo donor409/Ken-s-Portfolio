@@ -1,0 +1,19 @@
+{
+  "name": "kens-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive Architectural Swiss Portfolio inspired by Metic Studio, edge-deployed to Cloudflare Pages",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "deploy": "npx wrangler pages deploy . --project-name=ken-portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "metic-studio",
+    "swiss-design",
+    "cloudflare-pages",
+    "interactive"
+  ],
+  "author": "Ken",
+  "license": "MIT"
+}
