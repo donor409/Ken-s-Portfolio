@@ -159,7 +159,7 @@
         <div class="grid-cols-12" style="align-items:center; gap:2.5rem;">
           
           <!-- Left: Intro & Bio Details -->
-          <div style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 7; }">
+          <div style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 7; }" data-reveal>
             <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">COMPUTER ENGINEERING STUDENT & DEVELOPER</span>
             <h1 class="display-1" style="margin-bottom:1.5rem;" data-xray="[H1: Display]">
               Donor<span class="text-accent">.</span>
@@ -186,7 +186,7 @@
           </div>
 
           <!-- Right: Donor's Official Photo Card -->
-          <div class="hero-photo-wrapper" style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 5; }">
+          <div class="hero-photo-wrapper" style="grid-column: span 12; @media(min-width: 992px){ grid-column: span 5; }" data-reveal="scale" data-delay="1">
             <div class="hero-photo-card" data-xray="[Card: Portrait / FIG. 01]">
               <div class="hero-photo-img-box">
                 <img src="./assets/donor-photo.jpg" alt="Donor — Computer Engineering Student at ICCT Colleges Cainta" class="hero-photo-img" loading="eager" />
@@ -207,33 +207,35 @@
     <section id="about" class="principles-section" data-xray="[Section: About Me]">
       <div class="shell">
         <div class="principles-lead-wrap">
-          <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">BIOGRAPHY</span>
-          <h2 class="display-2" style="max-width:28ch;">About Me<span class="text-accent">.</span></h2>
+          <div data-reveal>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">BIOGRAPHY</span>
+            <h2 class="display-2" style="max-width:28ch;">About Me<span class="text-accent">.</span></h2>
+          </div>
           
-          <div style="margin-top:2rem; max-width:56ch; display:flex; flex-direction:column; gap:1.25rem;">
+          <div style="margin-top:2rem; max-width:56ch; display:flex; flex-direction:column; gap:1.25rem;" data-reveal data-delay="1">
             <p class="lead" style="color:var(--ink-2); line-height:1.7;">
               I am a 4th-year Computer Engineering student at ICCT Colleges Cainta Campus, currently residing in Binangonan, Rizal. I have a strong passion for software development, modern web applications, and embedded IoT hardware systems. I enjoy creating practical solutions by writing clean, straightforward code and continuously exploring new technologies.
             </p>
             <p style="font-size:1rem; color:var(--ink-muted); line-height:1.7;">
-              Throughout my studies, I have gained hands-on experience building web apps with TypeScript, Vite, and Tailwind CSS, mobile applications in Android Studio with Kotlin and Firebase, and programming microcontrollers like the ESP32 and Arduino with various sensors and communication protocols.
+              Throughout my studies, I have gained hands-on experience building web apps with TypeScript, mobile applications in Android Studio with Kotlin and Firebase, and programming microcontrollers like the ESP32 and Arduino with various sensors and communication protocols.
             </p>
           </div>
 
           <!-- 4 Highlights Box -->
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1.5rem; margin-top:3rem;">
-            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+            <div style="border-top:1px solid var(--border); padding-top:1rem;" data-reveal data-delay="1">
               <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">STATUS</span>
               <span style="font-weight:600; font-size:1.05rem;">4th Year College Student</span>
             </div>
-            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+            <div style="border-top:1px solid var(--border); padding-top:1rem;" data-reveal data-delay="2">
               <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">COURSE</span>
               <span style="font-weight:600; font-size:1.05rem;">B.S. in Computer Engineering</span>
             </div>
-            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+            <div style="border-top:1px solid var(--border); padding-top:1rem;" data-reveal data-delay="3">
               <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">CAMPUS</span>
               <span style="font-weight:600; font-size:1.05rem;">ICCT Colleges Cainta</span>
             </div>
-            <div style="border-top:1px solid var(--border); padding-top:1rem;">
+            <div style="border-top:1px solid var(--border); padding-top:1rem;" data-reveal data-delay="4">
               <span class="measure text-accent" style="display:block; margin-bottom:0.25rem;">LOCATION</span>
               <span style="font-weight:600; font-size:1.05rem;">Binangonan, Rizal</span>
             </div>
@@ -246,7 +248,7 @@
     <!-- 3. TECHNICAL COMPETENCIES (TOOLKIT) -->
     <section id="toolkit" class="toolkit-section" data-xray="[Section: Toolkit]">
       <div class="shell">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;" data-reveal>
           <div>
             <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">TOOLKIT</span>
             <h2 class="display-2">Technical Competencies<span class="text-accent">.</span></h2>
@@ -257,7 +259,7 @@
         <div class="toolkit-grid">
           
           <!-- 01 Software & Web -->
-          <div class="toolkit-card" data-xray="[Toolkit: 01]">
+          <div class="toolkit-card" data-xray="[Toolkit: 01]" data-reveal data-delay="1">
             <div>
               <span class="toolkit-num">01</span>
               <h3 class="toolkit-title">software & web</h3>
@@ -274,7 +276,7 @@
           </div>
 
           <!-- 02 Mobile, Cloud & Design -->
-          <div class="toolkit-card" data-xray="[Toolkit: 02]">
+          <div class="toolkit-card" data-xray="[Toolkit: 02]" data-reveal data-delay="2">
             <div>
               <span class="toolkit-num">02</span>
               <h3 class="toolkit-title">mobile, cloud & design</h3>
@@ -290,7 +292,7 @@
           </div>
 
           <!-- 03 Hardware & Embedded IoT -->
-          <div class="toolkit-card" data-xray="[Toolkit: 03]">
+          <div class="toolkit-card" data-xray="[Toolkit: 03]" data-reveal data-delay="3">
             <div>
               <span class="toolkit-num">03</span>
               <h3 class="toolkit-title">hardware & embedded iot</h3>
@@ -306,7 +308,7 @@
           </div>
 
           <!-- 04 AI-Assisted Development & Tools -->
-          <div class="toolkit-card" data-xray="[Toolkit: 04]">
+          <div class="toolkit-card" data-xray="[Toolkit: 04]" data-reveal data-delay="4">
             <div>
               <span class="toolkit-num">04</span>
               <h3 class="toolkit-title">ai-assisted development & tools</h3>
@@ -325,7 +327,7 @@
     <!-- 4. WORKS SECTION (TANGGAPAN NG KALIGTASAN) -->
     <section id="works" class="projects-section" data-xray="[Section: Works]">
       <div class="shell">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;" data-reveal>
           <div>
             <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">FEATURED APPLICATION</span>
             <h2 class="display-2">Works<span class="text-accent">.</span></h2>
@@ -334,10 +336,10 @@
         </div>
 
         <!-- Featured Web App Showcase Box -->
-        <div class="works-showcase-box" style="grid-template-columns: 1fr; margin-top: 3rem;" data-xray="[Box: Tanggapan ng Kaligtasan]">
+        <div class="works-showcase-box" style="grid-template-columns: 1fr; margin-top: 3rem;" data-xray="[Box: Tanggapan ng Kaligtasan]" data-reveal="scale">
           
           <!-- Top: App Details & Description -->
-          <div>
+          <div data-reveal>
             <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
               <div style="display:flex; align-items:center; gap:0.75rem;">
                 <span class="measure text-accent">WEB APPLICATION</span>
@@ -375,7 +377,7 @@
           </div>
 
           <!-- Bottom: Full-Width Real Screenshot in Sleek Browser Frame -->
-          <div class="works-preview-frame" style="box-shadow: 0 20px 50px rgba(0,0,0,0.08); border-radius:var(--radius-card);" data-xray="[Screenshot: Tanggapan ng Kaligtasan]">
+          <div class="works-preview-frame" style="box-shadow: 0 20px 50px rgba(0,0,0,0.08); border-radius:var(--radius-card);" data-xray="[Screenshot: Tanggapan ng Kaligtasan]" data-reveal="scale" data-delay="1">
             <div class="works-preview-bar">
               <div style="display:flex; gap:6px;">
                 <span style="width:10px; height:10px; border-radius:50%; background:#ff5f56; display:block;"></span>
@@ -407,12 +409,14 @@
     <!-- 5. EXPERIENCE & EDUCATION -->
     <section id="experience" class="services-section" data-xray="[Section: Experience & Education]">
       <div class="shell">
-        <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">BACKGROUND</span>
-        <h2 class="display-2">Experience & Education<span class="text-accent">.</span></h2>
+        <div data-reveal>
+          <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">BACKGROUND</span>
+          <h2 class="display-2">Experience & Education<span class="text-accent">.</span></h2>
+        </div>
 
         <div class="services-list">
           
-          <div class="service-row" data-xray="[Timeline: 01]">
+          <div class="service-row" data-xray="[Timeline: 01]" data-reveal data-delay="1">
             <div class="service-num">2024 — PRESENT</div>
             <div class="service-title-box">
               <h3>Web App & Disaster Risk Systems Developer</h3>
@@ -428,7 +432,7 @@
             </div>
           </div>
 
-          <div class="service-row" data-xray="[Timeline: 02]">
+          <div class="service-row" data-xray="[Timeline: 02]" data-reveal data-delay="2">
             <div class="service-num">2022 — 2024</div>
             <div class="service-title-box">
               <h3>Computer Engineering Student Developer</h3>
@@ -444,7 +448,7 @@
             </div>
           </div>
 
-          <div class="service-row" data-xray="[Timeline: 03]">
+          <div class="service-row" data-xray="[Timeline: 03]" data-reveal data-delay="3">
             <div class="service-num">EDUCATION</div>
             <div class="service-title-box">
               <h3>B.S. in Computer Engineering (4th Year)</h3>
@@ -469,7 +473,7 @@
       <div class="shell">
         <div class="contact-layout">
           
-          <div>
+          <div data-reveal="left">
             <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">GET IN TOUCH</span>
             <h2 class="display-2" style="margin-bottom:1.5rem;">Let's connect<span class="text-accent">.</span></h2>
             <p class="lead" style="margin-bottom:2.5rem;">
@@ -493,7 +497,7 @@
           </div>
 
           <!-- Contact Form -->
-          <div>
+          <div data-reveal="right" data-delay="1">
             <form id="portfolio-contact-form" class="contact-form" data-xray="[Form: Contact]">
               <div class="form-group">
                 <label for="contact-name">Your Name</label>
