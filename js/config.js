@@ -93,7 +93,7 @@ const PortfolioConfig = {
       category: "Disaster Risk & Emergency Mapping Web App",
       year: "2024 — 2026",
       summary: "An interactive disaster risk map web app engineered to guide communities to safety during calamities such as floods, fires, and earthquakes.",
-      description: "Ang application na ito ay binuo upang tumulong at magbigay ng mabilisang gabay sa mga mamamayan sa oras ng sakuna. Ipinapakita nito kung saan ang mga ligtas na evacuation centers, safe zones, at mga mapanganib na danger zones sa lalawigan ng Rizal (mula Cainta hanggang Binangonan) gamit ang interactive map at live location tracking.",
+      description: "This web application was engineered to assist individuals and families who do not know where to seek refuge during critical emergencies. It provides real-time geospatial risk mapping across Rizal Province (from Cainta to Binangonan), identifying safe evacuation centers, open safety zones, and active danger areas with live GPS tracking.",
       tags: ["TypeScript", "Leaflet Maps", "Geolocation API", "Tailwind CSS", "Firebase"],
       stats: [
         { label: "Coverage", value: "Cainta → Binangonan" },
