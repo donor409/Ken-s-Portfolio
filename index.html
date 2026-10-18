@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f4f4f2" />
-  <title>Donor — Software Engineer & Systems Architect</title>
-  <meta name="description" content="Donor — Full-Stack Software Engineer & Digital Craftsman. Hand-crafted systems, clean architecture, edge-native web performance." />
+  <title>Donor — Software Engineer & Full-Stack Systems Developer</title>
+  <meta name="description" content="Donor — Software Engineer & Full-Stack Developer. Hand-crafted systems, clean architecture, edge-native web performance." />
   
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Donor — Software Engineer & Systems Architect" />
-  <meta property="og:description" content="Hand-crafted code, architectural clarity, edge-native web performance." />
+  <meta property="og:title" content="Donor — Software Engineer & Full-Stack Systems Developer" />
+  <meta property="og:description" content="Hand-crafted code, scalable architecture, edge-native web performance." />
   <meta property="og:image" content="./assets/favicon.svg" />
 
   <!-- Favicon -->
@@ -74,7 +74,7 @@
         <span class="measure text-accent" id="nav-xray-status" style="display:none;">X-RAY ACTIVE</span>
       </div>
 
-      <!-- Action Pill: X-Ray Blueprint, Theme Switch, Contact & Menu -->
+      <!-- Action Pill: X-Ray Blueprint, Theme Switch, Resume, Menu -->
       <div class="nav-pill">
         <!-- X-Ray Mode Toggle Button -->
         <button type="button" id="xray-toggle" class="nav-item-btn" title="X-Ray Blueprint mode: Inspect grid & architecture" aria-pressed="false" data-cursor="hover" data-xray="[Btn: X-Ray 44px]">
@@ -91,10 +91,10 @@
           </svg>
         </button>
 
-        <!-- CTA Start Project -->
-        <a href="#contact" class="nav-item-btn" style="background:var(--surface);" data-cursor="hover">
-          <span>Inquire</span>
-        </a>
+        <!-- Resume Modal Trigger -->
+        <button type="button" class="nav-item-btn open-resume-btn" style="background:var(--surface);" data-cursor="hover">
+          <span>CV / Resume</span>
+        </button>
 
         <!-- Menu Toggle Button -->
         <button type="button" id="menu-toggle" class="nav-item-btn icon-only" aria-label="Open main menu" aria-expanded="false" data-cursor="hover">
@@ -111,7 +111,7 @@
   <div id="main-menu-dialog" class="main-menu-dialog" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="shell" style="width:100%;">
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
-        <span class="measure" style="color:var(--bg); opacity:0.6;">INDEX DIRECTORY</span>
+        <span class="measure" style="color:var(--bg); opacity:0.6;">PORTFOLIO INDEX</span>
         <button type="button" id="menu-close-btn" class="nav-item-btn" style="color:var(--bg); border:1px solid rgba(255,255,255,0.2);" data-cursor="hover">
           <span>Close [ESC]</span>
         </button>
@@ -119,12 +119,13 @@
 
       <nav aria-label="Main Navigation">
         <ul class="menu-chapters">
-          <li><a href="#projects" class="menu-link" data-cursor="hover"><span class="measure text-accent">01</span><span>Work & Projects</span></a></li>
-          <li><a href="#the-build" class="menu-link" data-cursor="hover"><span class="measure text-accent">02</span><span>The Build Process</span></a></li>
-          <li><a href="#estimator" class="menu-link" data-cursor="hover"><span class="measure text-accent">03</span><span>Project Scope Estimator</span></a></li>
-          <li><a href="#services" class="menu-link" data-cursor="hover"><span class="measure text-accent">04</span><span>Services & Capabilities</span></a></li>
-          <li><a href="#architecture" class="menu-link" data-cursor="hover"><span class="measure text-accent">05</span><span>System Architecture</span></a></li>
-          <li><a href="#contact" class="menu-link" data-cursor="hover"><span class="measure text-accent">06</span><span>Contact & Dispatch</span></a></li>
+          <li><a href="#about" class="menu-link" data-cursor="hover"><span class="measure text-accent">01</span><span>About & Bio</span></a></li>
+          <li><a href="#tech" class="menu-link" data-cursor="hover"><span class="measure text-accent">02</span><span>Developer Tech Stack</span></a></li>
+          <li><a href="#projects" class="menu-link" data-cursor="hover"><span class="measure text-accent">03</span><span>Engineering Projects</span></a></li>
+          <li><a href="#the-build" class="menu-link" data-cursor="hover"><span class="measure text-accent">04</span><span>The Engineering Lifecycle</span></a></li>
+          <li><a href="#experience" class="menu-link" data-cursor="hover"><span class="measure text-accent">05</span><span>Experience & Education</span></a></li>
+          <li><a href="#estimator" class="menu-link" data-cursor="hover"><span class="measure text-accent">06</span><span>Project Scope Estimator</span></a></li>
+          <li><a href="#contact" class="menu-link" data-cursor="hover"><span class="measure text-accent">07</span><span>Contact & Dispatch</span></a></li>
         </ul>
       </nav>
     </div>
@@ -136,6 +137,7 @@
       </div>
 
       <div style="display:flex; align-items:center; gap:1.5rem;">
+        <button type="button" class="open-resume-btn" style="color:var(--bg); text-decoration:underline; font-size:0.85rem;" data-cursor="hover">View Resume</button>
         <div style="display:flex; align-items:center; gap:0.5rem; border:1px solid rgba(255,255,255,0.2); padding:0.25rem 0.5rem; border-radius:9999px;">
           <label style="font-size:0.75rem; cursor:pointer;"><input type="radio" name="site-theme" value="light" style="margin-right:4px;">Light</label>
           <label style="font-size:0.75rem; cursor:pointer;"><input type="radio" name="site-theme" value="dark" style="margin-right:4px;">Dark</label>
@@ -147,41 +149,44 @@
   <!-- MAIN VIEWPORT CONTENT -->
   <main id="main-content" class="frame">
 
-    <!-- 1. HERO SECTION -->
-    <section id="hero" class="hero-section" data-xray="[Section: Hero / Fluid Grotesk]">
+    <!-- 1. DEVELOPER HERO SECTION -->
+    <section id="hero" class="hero-section" data-xray="[Section: Developer Hero]">
       <div class="shell">
         
         <div class="hero-meta-top">
           <span class="measure live-coords">14.5995° N, 120.9842° E — Manila / Remote</span>
-          <span class="measure text-accent">Available for Q3/Q4 Systems & Engineering</span>
+          <span class="measure text-accent">Available for Full-Time Roles & Consulting</span>
         </div>
 
         <div class="hero-layout">
           <div>
-            <h1 class="display-1" data-xray="[H1: Display-1 / Tracking -0.035em]">
-              Take a closer look<span class="text-accent">.</span>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.75rem;">SOFTWARE ENGINEER & BUILDER</span>
+            <h1 class="display-1" data-xray="[H1: Display-1 / Developer]">
+              Donor<span class="text-accent">.</span>
             </h1>
           </div>
 
           <div class="hero-lead-box">
-            <p class="lead" data-xray="[P: Lead / Max 32ch Optimal Read]">
-              Software engineer & digital craftsman. Hand-crafted web applications, resilient systems, and edge architecture. Zero page-builder bloat.
+            <p class="lead" data-xray="[P: Lead / Bio]">
+              Full-Stack Software Engineer specializing in distributed backends, resilient APIs, and edge-native web architecture. Hand-crafted code with zero page-builder bloat.
             </p>
 
             <div class="hero-actions">
-              <a href="#contact" class="btn btn-primary" data-cursor="hover" data-xray="[Btn: Primary / 44px]">
-                <span>Start a Project</span>
+              <a href="#projects" class="btn btn-primary" data-cursor="hover" data-xray="[Btn: Primary]">
+                <span>View Projects</span>
                 <span class="btn-dot" aria-hidden="true">
                   <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
                 </span>
               </a>
 
-              <a href="#projects" class="btn btn-secondary" data-cursor="hover" data-xray="[Btn: Secondary]">
-                <span>See the Work</span>
+              <button type="button" class="btn btn-secondary open-resume-btn" data-cursor="hover" data-xray="[Btn: Resume]">
+                <span>CV / Resume</span>
                 <span class="btn-dot" aria-hidden="true">
-                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
+                  <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
                 </span>
-              </a>
+              </button>
+
+              <a href="#contact" class="link measure text-accent" style="margin-left:0.5rem;" data-cursor="hover">Contact Me ↗</a>
             </div>
           </div>
         </div>
@@ -190,79 +195,148 @@
     </section>
 
     <!-- 2. ARCHITECTURAL METRICS ROW -->
-    <section class="shell" data-xray="[Section: Audit Metrics]">
+    <section class="shell" data-xray="[Section: Developer Metrics]">
       <div class="metrics-row">
         <div class="metric-cell" data-xray="[Metric: 01]">
-          <div class="metric-val">05+</div>
+          <div class="metric-val">04+</div>
           <div class="metric-label">Years Engineering</div>
-          <div class="metric-note">Systems to high-end UI</div>
+          <div class="metric-note">Full-stack & distributed systems</div>
         </div>
         <div class="metric-cell" data-xray="[Metric: 02]">
-          <div class="metric-val">&lt;60ms</div>
-          <div class="metric-label">Edge Latency</div>
-          <div class="metric-note">Serverless global cache</div>
+          <div class="metric-val">30+</div>
+          <div class="metric-label">Repositories & Deploys</div>
+          <div class="metric-note">Clean, audited codebases</div>
         </div>
         <div class="metric-cell" data-xray="[Metric: 03]">
-          <div class="metric-val">100%</div>
-          <div class="metric-label">Lighthouse Score</div>
-          <div class="metric-note">Core Web Vitals AAA</div>
+          <div class="metric-val">&lt;50ms</div>
+          <div class="metric-label">Edge Response</div>
+          <div class="metric-note">Cloudflare Workers serverless</div>
         </div>
         <div class="metric-cell" data-xray="[Metric: 04]">
-          <div class="metric-val">30+</div>
-          <div class="metric-label">Shipped Deployments</div>
-          <div class="metric-note">Production reliability</div>
+          <div class="metric-val">100%</div>
+          <div class="metric-label">Core Web Vitals</div>
+          <div class="metric-note">Lighthouse performance benchmarks</div>
         </div>
       </div>
     </section>
 
-    <!-- 3. STANCE & ENGINEERING PRINCIPLES -->
-    <section class="principles-section" data-xray="[Section: Principles 4-Col]">
+    <!-- 3. ABOUT ME & ENGINEERING PHILOSOPHY -->
+    <section id="about" class="principles-section" data-xray="[Section: About Me]">
       <div class="shell">
         <div class="principles-lead-wrap">
-          <span class="measure text-accent" style="display:block; margin-bottom:1rem;">THE CRAFT & STANCE</span>
-          <h2 class="display-2" style="max-width:28ch;">
-            I build software and digital products that make an immediate impact and hold up under rigorous scale.
+          <span class="measure text-accent" style="display:block; margin-bottom:1rem;">ABOUT DONOR</span>
+          <h2 class="display-2" style="max-width:30ch;">
+            I construct software and web systems that land with immediate impact and hold up under heavy production scale.
           </h2>
+          <p class="lead" style="max-width:48ch; margin-top:1.5rem;">
+            From database schemas and idempotent API microservices to high-speed tactile frontends, I combine Computer Engineering fundamentals with modern edge cloud architecture.
+          </p>
         </div>
 
+        <!-- 4 Engineering Principles -->
         <div class="principles-grid">
           <div class="principle-card" data-xray="[Principle: 01]">
-            <div class="measure principle-num">01 / DISCIPLINE</div>
-            <h3 class="display-4">No site builder.</h3>
-            <p>No bloated templates or hundreds of third-party plugins. Every component is designed and coded by hand to fit your product's performance and branding.</p>
+            <div class="measure principle-num">01 / PERFORMANCE</div>
+            <h3 class="display-4">No site builder bloat.</h3>
+            <p>No generic templates or hundreds of third-party plugins. Every component is designed and hand-coded to fit performance requirements and clean semantics.</p>
           </div>
 
           <div class="principle-card" data-xray="[Principle: 02]">
             <div class="measure principle-num">02 / CRAFTSMANSHIP</div>
-            <h3 class="display-4">Code by hand.</h3>
-            <p>Lean, readable, and strictly audited source code instead of generated bloat. That is why pages load in milliseconds and maintain 100/100 Core Web Vitals.</p>
+            <h3 class="display-4">Hand-crafted clean code.</h3>
+            <p>Lean, readable, and strictly audited source code. That is why applications load in milliseconds, consume minimal memory, and maintain high Lighthouse scores.</p>
           </div>
 
           <div class="principle-card" data-xray="[Principle: 03]">
-            <div class="measure principle-num">03 / LONGEVITY</div>
-            <h3 class="display-4">Built for longevity.</h3>
-            <p>No fleeting design fads that look outdated in two years. Interfaces and systems designed with Swiss precision that stand the test of time.</p>
+            <div class="measure principle-num">03 / ARCHITECTURE</div>
+            <h3 class="display-4">Systems-first mindset.</h3>
+            <p>A beautiful UI is only as good as the architecture underneath. Robust error handling, idempotent APIs, and structured data flow come first.</p>
           </div>
 
           <div class="principle-card" data-xray="[Principle: 04]">
-            <div class="measure principle-num">04 / TRANSPARENCY</div>
-            <h3 class="display-4">One engineer, direct contact.</h3>
-            <p>You speak directly to the person who designs and writes the code. Clear communication from architectural strategy through post-launch scaling.</p>
+            <div class="measure principle-num">04 / STANDARDS</div>
+            <h3 class="display-4">Built for longevity.</h3>
+            <p>Avoiding fleeting framework churn in favor of solid web standards (HTML5, modern CSS, strict TypeScript) that stand firm for years.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4. "THE BUILD" INTERACTIVE PROCESS STAGE -->
-    <section id="the-build" class="build-section" data-xray="[Section: The Build / Interactive Slider]">
+    <!-- 4. COMPLETE DEVELOPER TECH STACK MATRIX -->
+    <section id="tech" class="tech-section" data-xray="[Section: Developer Tech Stack]">
+      <div class="shell">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+          <div>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">SKILLS & TOOLCHAIN</span>
+            <h2 class="display-2">Technical Competencies<span class="text-accent">.</span></h2>
+          </div>
+          <p class="lead" style="max-width:38ch;">
+            Audited toolchains and runtimes evaluated for performance, reliability, and zero-bloat runtime footprints.
+          </p>
+        </div>
+
+        <div class="tech-grid">
+          <!-- Languages -->
+          <div class="tech-card" data-xray="[Tech: Languages]">
+            <span class="tech-cat">Core Languages</span>
+            <h4 class="tech-name">TypeScript & JavaScript</h4>
+            <p class="tech-note">Strict null checks, generics, asynchronous I/O, event loop, and DOM architecture.</p>
+            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">C / C++</span>
+              <span class="tag-pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- Frontend Architecture -->
+          <div class="tech-card" data-xray="[Tech: Frontend]">
+            <span class="tech-cat">Frontend Architecture</span>
+            <h4 class="tech-name">React.js & Next.js</h4>
+            <p class="tech-note">Component lifecycle, state machines, server components, and edge server rendering.</p>
+            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <span class="tag-pill">Tailwind CSS</span>
+              <span class="tag-pill">Vue.js</span>
+              <span class="tag-pill">WebGL</span>
+            </div>
+          </div>
+
+          <!-- Backend & Systems -->
+          <div class="tech-card" data-xray="[Tech: Backend]">
+            <span class="tech-cat">Backend & APIs</span>
+            <h4 class="tech-name">Node.js & Express</h4>
+            <p class="tech-note">RESTful routing, WebSocket streams, authentication pipelines, and rate limiters.</p>
+            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <span class="tag-pill">FastAPI</span>
+              <span class="tag-pill">WebSockets</span>
+              <span class="tag-pill">GraphQL</span>
+            </div>
+          </div>
+
+          <!-- Databases & Cloud -->
+          <div class="tech-card" data-xray="[Tech: Cloud/DB]">
+            <span class="tech-cat">Databases & Edge Cloud</span>
+            <h4 class="tech-name">PostgreSQL & Redis</h4>
+            <p class="tech-note">Relational modeling, indexing, in-memory caching, and Cloudflare Pages/Workers.</p>
+            <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.75rem;">
+              <span class="tag-pill">Cloudflare</span>
+              <span class="tag-pill">MongoDB</span>
+              <span class="tag-pill">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. "THE BUILD" INTERACTIVE PROCESS STAGE -->
+    <section id="the-build" class="build-section" data-xray="[Section: Engineering Lifecycle]">
       <div class="shell">
         <div style="display:flex; justify-content:space-between; align-items:flex-end;">
           <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">THE ANATOMY OF CRAFT</span>
-            <h2 class="display-2">From a line to a button<span class="text-accent">.</span></h2>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">THE ENGINEERING LIFECYCLE</span>
+            <h2 class="display-2">From Logic Spec to Edge Deploy<span class="text-accent">.</span></h2>
           </div>
           <div class="measure" style="text-align:right;">
-            <span>PROGRESS</span>
+            <span>LIFECYCLE</span>
             <div id="build-progress-percent" style="font-size:1.5rem; font-weight:700; color:var(--ink);">013%</div>
           </div>
         </div>
@@ -276,9 +350,9 @@
               <span id="build-stage-total">08</span>
             </div>
 
-            <h3 id="build-stage-title" class="display-3" style="margin-bottom:1rem;">A line & grid.</h3>
+            <h3 id="build-stage-title" class="display-3" style="margin-bottom:1rem;">System Specs & Logic.</h3>
             <p id="build-stage-desc" class="lead" style="margin-bottom:2rem;">
-              Every project starts with guides. Where things belong is measured mathematically, never guessed.
+              Every robust project starts with defined problem requirements, user flows, and mathematical constraints.
             </p>
 
             <div class="build-controls-row">
@@ -296,47 +370,107 @@
           </div>
 
           <!-- Dynamic Visual Canvas Container -->
-          <div class="build-canvas-box" id="build-canvas-container" data-xray="[Canvas: Step Visualizer]">
+          <div class="build-canvas-box" id="build-canvas-container" data-xray="[Canvas: Lifecycle Visualizer]">
             <!-- Rendered by js/build-slider.js -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. FEATURED PROJECTS SHOWCASE -->
+    <!-- 6. FEATURED DEVELOPER PROJECTS -->
     <section id="projects" class="projects-section" data-xray="[Section: Projects Showcase]">
       <div class="shell">
         <div class="projects-header-row">
           <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">SELECTED PORTFOLIO</span>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">SELECTED REPOSITORIES</span>
             <h2 class="display-2">Featured Projects<span class="text-accent">.</span></h2>
           </div>
 
           <!-- Category Filter Pills -->
           <div class="filter-pills" role="tablist" aria-label="Project filter">
             <button type="button" class="filter-pill active" data-filter="all" data-cursor="hover">All (5)</button>
-            <button type="button" class="filter-pill" data-filter="Creative Engineering" data-cursor="hover">Creative</button>
             <button type="button" class="filter-pill" data-filter="Backend & Systems" data-cursor="hover">Backend</button>
             <button type="button" class="filter-pill" data-filter="Frontend Architecture" data-cursor="hover">Frontend</button>
+            <button type="button" class="filter-pill" data-filter="Creative Engineering" data-cursor="hover">Creative</button>
             <button type="button" class="filter-pill" data-filter="Full-Stack Web" data-cursor="hover">Full-Stack</button>
           </div>
         </div>
 
         <!-- Dynamic Projects Grid -->
         <div class="projects-grid" id="projects-grid">
-          <!-- Populated by js/main.js -->
+          <!-- Populated dynamically by js/main.js -->
         </div>
       </div>
     </section>
 
-    <!-- 6. INTERACTIVE PROJECT SCOPE ESTIMATOR -->
-    <section id="estimator" class="estimator-section" data-xray="[Section: Scope Estimator]">
+    <!-- 7. EXPERIENCE & EDUCATION TIMELINE -->
+    <section id="experience" class="services-section" data-xray="[Section: Career & Education]">
+      <div class="shell">
+        <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">CAREER TRAJECTORY</span>
+        <h2 class="display-2">Experience & Education<span class="text-accent">.</span></h2>
+
+        <div class="services-list">
+          
+          <div class="service-row" data-xray="[Timeline: 01]">
+            <div class="service-num">2024 — NOW</div>
+            <div class="service-title-box">
+              <h3>Lead Full-Stack Systems Engineer</h3>
+              <span class="service-subtitle">Independent & Open Source • Remote</span>
+            </div>
+            <p class="service-desc">
+              Architecting bespoke web applications, resilient edge APIs, and high-performance frontend interfaces. Providing system audits, security checks, and code optimization.
+            </p>
+            <div class="service-deliverables">
+              <span class="tag-pill">Edge APIs</span>
+              <span class="tag-pill">TypeScript</span>
+              <span class="tag-pill">System Audits</span>
+            </div>
+          </div>
+
+          <div class="service-row" data-xray="[Timeline: 02]">
+            <div class="service-num">2022 — 2024</div>
+            <div class="service-title-box">
+              <h3>Full-Stack Software Engineer</h3>
+              <span class="service-subtitle">Technology Solutions Enterprise • Manila</span>
+            </div>
+            <p class="service-desc">
+              Engineered scalable REST microservices, database schemas, and redesigned the core customer portal, reducing bundle size by 42% and API response times by 35%.
+            </p>
+            <div class="service-deliverables">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">Node.js</span>
+              <span class="tag-pill">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="service-row" data-xray="[Timeline: 03]">
+            <div class="service-num">EDUCATION</div>
+            <div class="service-title-box">
+              <h3>B.S. in Computer Engineering</h3>
+              <span class="service-subtitle">College of Engineering & Architecture • Honors</span>
+            </div>
+            <p class="service-desc">
+              Rigorous curriculum covering Computer Architecture, Microprocessor Systems, Data Structures & Algorithms, Network Security, and Distributed Systems.
+            </p>
+            <div class="service-deliverables">
+              <span class="tag-pill">Algorithms</span>
+              <span class="tag-pill">Hardware / Systems</span>
+              <span class="tag-pill">Honors</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INTERACTIVE PROJECT SCOPE ESTIMATOR -->
+    <section id="estimator" class="estimator-section" data-xray="[Section: Collaboration Estimator]">
       <div class="shell">
         <div>
-          <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">PLANNING & DISCOVERY</span>
-          <h2 class="display-2">Interactive Project Estimator<span class="text-accent">.</span></h2>
+          <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">COLLABORATION ESTIMATOR</span>
+          <h2 class="display-2">Estimate Project Scope & Stack<span class="text-accent">.</span></h2>
           <p class="lead" style="max-width:44ch; margin-top:0.75rem;">
-            Select your project specifications below to calculate estimated timelines, recommended stack, and generated scope.
+            Planning a new software product or system overhaul? Select your parameters below to generate estimated timelines and architecture.
           </p>
         </div>
 
@@ -345,20 +479,19 @@
             
             <!-- Estimator Controls -->
             <div>
-              <!-- 1. Project Type -->
               <span class="estimator-group-title">01 / Project Archetype</span>
               <div class="radio-tile-group">
                 <label class="radio-tile" data-cursor="hover">
                   <input type="radio" name="est-type" value="webapp" checked class="sr-only" />
                   <div class="tile-body">
-                    <span class="tile-name">Web Application</span>
+                    <span class="tile-name">Full-Stack Web App</span>
                     <span class="tile-desc">Interactive SPA/PWA with API integrations</span>
                   </div>
                 </label>
                 <label class="radio-tile" data-cursor="hover">
                   <input type="radio" name="est-type" value="portfolio" class="sr-only" />
                   <div class="tile-body">
-                    <span class="tile-name">Bespoke Brand / Studio</span>
+                    <span class="tile-name">High-Performance Web Presence</span>
                     <span class="tile-desc">High-speed editorial site with micro-motion</span>
                   </div>
                 </label>
@@ -372,20 +505,19 @@
                 <label class="radio-tile" data-cursor="hover">
                   <input type="radio" name="est-type" value="design-system" class="sr-only" />
                   <div class="tile-body">
-                    <span class="tile-name">Design System</span>
+                    <span class="tile-name">Design Token System</span>
                     <span class="tile-desc">Accessible token library & component specs</span>
                   </div>
                 </label>
               </div>
 
-              <!-- 2. Scope & Complexity -->
               <span class="estimator-group-title">02 / Target Scope</span>
               <div class="radio-tile-group">
                 <label class="radio-tile" data-cursor="hover">
                   <input type="radio" name="est-scope" value="small" class="sr-only" />
                   <div class="tile-body">
                     <span class="tile-name">Focused MVP</span>
-                    <span class="tile-desc">1 — 3 essential primary views</span>
+                    <span class="tile-desc">1 — 3 essential primary views & endpoints</span>
                   </div>
                 </label>
                 <label class="radio-tile" data-cursor="hover">
@@ -398,14 +530,13 @@
                 <label class="radio-tile" data-cursor="hover">
                   <input type="radio" name="est-scope" value="large" class="sr-only" />
                   <div class="tile-body">
-                    <span class="tile-name">Full Platform</span>
+                    <span class="tile-name">Enterprise Platform</span>
                     <span class="tile-desc">Extensive multi-user dashboard & systems</span>
                   </div>
                 </label>
               </div>
 
-              <!-- 3. Specialized Capabilities -->
-              <span class="estimator-group-title">03 / Key Capabilities (Select all that apply)</span>
+              <span class="estimator-group-title">03 / Key Capabilities</span>
               <div style="display:flex; flex-wrap:wrap; gap:0.6rem; margin-bottom:1.5rem;">
                 <label class="tag-pill" style="cursor:pointer; display:flex; align-items:center; gap:0.35rem; padding:0.4rem 0.8rem;" data-cursor="hover">
                   <input type="checkbox" name="est-features" value="Cloudflare Edge CDN" checked />
@@ -425,7 +556,6 @@
                 </label>
               </div>
 
-              <!-- 4. Delivery Pace -->
               <span class="estimator-group-title">04 / Delivery Pace</span>
               <div style="display:flex; gap:1rem;">
                 <label style="font-size:0.85rem; cursor:pointer;"><input type="radio" name="est-speed" value="standard" checked style="margin-right:4px;">Standard Pace</label>
@@ -471,157 +601,16 @@
       </div>
     </section>
 
-    <!-- 7. SERVICES MATRIX -->
-    <section id="services" class="services-section" data-xray="[Section: Services]">
-      <div class="shell">
-        <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">CORE CAPABILITIES</span>
-        <h2 class="display-2">Everything your product needs online<span class="text-accent">.</span></h2>
-
-        <div class="services-list">
-          
-          <div class="service-row" data-xray="[Service: 01]">
-            <div class="service-num">01</div>
-            <div class="service-title-box">
-              <h3>Custom Web Applications</h3>
-              <span class="service-subtitle">Fast, accessible, and responsive</span>
-            </div>
-            <p class="service-desc">
-              End-to-end development of web applications. Modern state management, responsive layouts, API integrations, and sub-second page transitions.
-            </p>
-            <div class="service-deliverables">
-              <span class="tag-pill">SPAs & PWAs</span>
-              <span class="tag-pill">API Integration</span>
-              <span class="tag-pill">Web Vitals 100</span>
-            </div>
-          </div>
-
-          <div class="service-row" data-xray="[Service: 02]">
-            <div class="service-num">02</div>
-            <div class="service-title-box">
-              <h3>Backend & Cloud Systems</h3>
-              <span class="service-subtitle">Resilient, scalable, edge-native</span>
-            </div>
-            <p class="service-desc">
-              Architecting fault-tolerant microservices, relational database schemas, caching layers, and serverless edge functions on Cloudflare Workers.
-            </p>
-            <div class="service-deliverables">
-              <span class="tag-pill">Edge Workers</span>
-              <span class="tag-pill">PostgreSQL / Redis</span>
-              <span class="tag-pill">Idempotent APIs</span>
-            </div>
-          </div>
-
-          <div class="service-row" data-xray="[Service: 03]">
-            <div class="service-num">03</div>
-            <div class="service-title-box">
-              <h3>Design Systems & UI Engineering</h3>
-              <span class="service-subtitle">Design tokens to production code</span>
-            </div>
-            <p class="service-desc">
-              Bridging the boundary between design and code. Standardized token architectures, WCAG AAA accessibility, and delightful micro-interactions.
-            </p>
-            <div class="service-deliverables">
-              <span class="tag-pill">Token Compilers</span>
-              <span class="tag-pill">WCAG AAA</span>
-              <span class="tag-pill">Micro-haptics</span>
-            </div>
-          </div>
-
-          <div class="service-row" data-xray="[Service: 04]">
-            <div class="service-num">04</div>
-            <div class="service-title-box">
-              <h3>Cloudflare Deployment & CI/CD</h3>
-              <span class="service-subtitle">Global edge distribution</span>
-            </div>
-            <p class="service-desc">
-              Zero-downtime automated deployment pipelines. High-security headers, Brotli compression, anycast routing, and custom SSL configuration.
-            </p>
-            <div class="service-deliverables">
-              <span class="tag-pill">Cloudflare Pages</span>
-              <span class="tag-pill">GitHub Actions</span>
-              <span class="tag-pill">DDoS Defense</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. SYSTEM ARCHITECTURE & TECH BLUEPRINT -->
-    <section id="architecture" class="tech-section" data-xray="[Section: System Architecture]">
-      <div class="shell">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
-          <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">TECHNICAL BLUEPRINT</span>
-            <h2 class="display-2">System Architecture & Stack<span class="text-accent">.</span></h2>
-          </div>
-          <p class="lead" style="max-width:38ch;">
-            Selected tools and runtimes evaluated for performance, reliability, and zero-bloat runtime footprints.
-          </p>
-        </div>
-
-        <div class="tech-grid">
-          <div class="tech-card" data-xray="[Tech: 01]">
-            <span class="tech-cat">Languages & Typings</span>
-            <h4 class="tech-name">TypeScript / ESNext</h4>
-            <p class="tech-note">Strict null checks, generic typings, asynchronous concurrency pipelines.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 02]">
-            <span class="tech-cat">Frontend Architecture</span>
-            <h4 class="tech-name">React / Next.js / Vue</h4>
-            <p class="tech-note">Component lifecycles, atomic design systems, server-side and static site generation.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 03]">
-            <span class="tech-cat">Styling & Layout</span>
-            <h4 class="tech-name">CSS3 / Tailwind / Tokens</h4>
-            <p class="tech-note">CSS Grid, fluid clamp scales, design token variables, zero-runtime overhead.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 04]">
-            <span class="tech-cat">Server & Runtimes</span>
-            <h4 class="tech-name">Node.js / Express / Bun</h4>
-            <p class="tech-note">Event-driven I/O, RESTful and GraphQL endpoints, WebSocket streams.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 05]">
-            <span class="tech-cat">Database & Storage</span>
-            <h4 class="tech-name">PostgreSQL / Redis / SQLite</h4>
-            <p class="tech-note">Relational data models, indexing optimization, in-memory low-latency caching.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 06]">
-            <span class="tech-cat">Cloud & Edge</span>
-            <h4 class="tech-name">Cloudflare Pages & Workers</h4>
-            <p class="tech-note">Global edge anycast, serverless worker compute, automatic HTTPS & Brotli.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 07]">
-            <span class="tech-cat">Tooling & DevOps</span>
-            <h4 class="tech-name">Git & GitHub Actions</h4>
-            <p class="tech-note">Automated test runners, branch previews, immutable artifact deployments.</p>
-          </div>
-
-          <div class="tech-card" data-xray="[Tech: 08]">
-            <span class="tech-cat">Standards & Quality</span>
-            <h4 class="tech-name">WCAG AAA & Web Vitals</h4>
-            <p class="tech-note">High color contrast, keyboard accessibility, 100/100 Lighthouse benchmark.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- 9. CONTACT & DISPATCH -->
     <section id="contact" class="contact-section" data-xray="[Section: Contact / Dispatch]">
       <div class="shell">
         <div class="contact-layout">
           
           <div>
-            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">START A CONVERSATION</span>
+            <span class="measure text-accent" style="display:block; margin-bottom:0.5rem;">GET IN TOUCH</span>
             <h2 class="display-2" style="margin-bottom:1.5rem;">Let's build something exceptional<span class="text-accent">.</span></h2>
             <p class="lead" style="margin-bottom:2.5rem;">
-              Have an upcoming product, system architecture need, or high-performance website to build? Reach out directly.
+              Have an engineering role, contract project, or technical problem to solve? I respond promptly to all messages.
             </p>
 
             <div style="margin-bottom:2rem;">
@@ -635,7 +624,7 @@
             </div>
 
             <div>
-              <span class="measure" style="display:block; margin-bottom:0.5rem;">NETWORK CHANNELS</span>
+              <span class="measure" style="display:block; margin-bottom:0.5rem;">ENGINEER CHANNELS</span>
               <div style="display:flex; gap:1rem; font-family:var(--font-mono); font-size:0.85rem;">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link text-accent" data-cursor="hover">GitHub ↗</a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="link text-accent" data-cursor="hover">LinkedIn ↗</a>
@@ -658,8 +647,8 @@
               </div>
 
               <div class="form-group">
-                <label for="contact-message">Project Scope or Message</label>
-                <textarea id="contact-message" class="form-textarea" rows="6" placeholder="Describe your project goals, target timeline, or tech requirements..." required></textarea>
+                <label for="contact-message">Inquiry / Project Scope</label>
+                <textarea id="contact-message" class="form-textarea" rows="6" placeholder="Describe the role, project goals, timeline, or engineering specs..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary" style="align-self:flex-start;" data-cursor="hover">
@@ -676,11 +665,12 @@
         <!-- Footer Colophon -->
         <div class="footer-bottom">
           <div class="measure">
-            © <span id="colophon-year">2026</span> DONOR. ALL RIGHTS RESERVED. HAND-CRAFTED AT 14.5995° N, 120.9842° E.
+            © <span id="colophon-year">2026</span> DONOR. ALL RIGHTS RESERVED. CRAFTED AT 14.5995° N, 120.9842° E.
           </div>
 
           <div class="footer-links">
             <a href="#hero" class="measure" data-cursor="hover">Back to Top ↑</a>
+            <button type="button" class="measure open-resume-btn" data-cursor="hover">Resume</button>
             <button type="button" class="measure copy-email-btn" data-cursor="hover">Copy Email</button>
             <span class="measure">Edge Hosted on Cloudflare</span>
           </div>
@@ -696,6 +686,94 @@
     <div class="modal-drawer">
       <button type="button" id="project-modal-close" class="modal-close-btn" aria-label="Close project modal" data-cursor="hover">×</button>
       <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE RESUME / CV MODAL -->
+  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-drawer">
+      <button type="button" id="resume-modal-close" class="modal-close-btn" aria-label="Close resume modal" data-cursor="hover">×</button>
+      
+      <div class="resume-view">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1.5rem; border-bottom:1px solid var(--border); padding-bottom:1.5rem;">
+          <div>
+            <h2 class="display-3" style="font-size:2rem;">Donor</h2>
+            <p class="measure text-accent" style="font-size:0.85rem; margin-top:0.25rem;">Software Engineer & Full-Stack Systems Developer</p>
+            <p style="font-size:0.85rem; color:var(--ink-muted); margin-top:0.25rem;">donor.developer.pro@gmail.com • Manila, Philippines / Remote</p>
+          </div>
+          <button type="button" id="print-resume-btn" class="btn btn-secondary" style="font-size:0.75rem; padding:0.35rem 0.85rem;" data-cursor="hover">
+            <span>Print / Save PDF</span>
+          </button>
+        </div>
+
+        <div style="margin-bottom:1.5rem;">
+          <h4 class="measure" style="margin-bottom:0.5rem;">Executive Summary</h4>
+          <p style="font-size:0.9rem; line-height:1.6; color:var(--ink-2);">
+            Full-Stack Software Engineer with 4+ years of hands-on experience designing distributed backends, RESTful and WebSocket microservices, and accessible, high-performance web interfaces. Adept at TypeScript, React, Node.js, PostgreSQL, and serverless edge delivery with Cloudflare Workers.
+          </p>
+        </div>
+
+        <div style="margin-bottom:1.5rem;">
+          <h4 class="measure" style="margin-bottom:0.75rem;">Core Competencies & Stack</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:0.35rem;">
+            <span class="tag-pill">TypeScript</span>
+            <span class="tag-pill">JavaScript</span>
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">C / C++</span>
+            <span class="tag-pill">React.js</span>
+            <span class="tag-pill">Next.js</span>
+            <span class="tag-pill">Node.js</span>
+            <span class="tag-pill">Express</span>
+            <span class="tag-pill">PostgreSQL</span>
+            <span class="tag-pill">Redis</span>
+            <span class="tag-pill">Docker</span>
+            <span class="tag-pill">Cloudflare Pages/Workers</span>
+            <span class="tag-pill">Git / CI/CD</span>
+            <span class="tag-pill">WCAG AAA Accessibility</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom:1.5rem;">
+          <h4 class="measure" style="margin-bottom:0.75rem;">Experience</h4>
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div>
+              <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
+                <span>Lead Full-Stack Systems Engineer</span>
+                <span class="measure">2024 — Present</span>
+              </div>
+              <div class="measure" style="color:var(--accent);">Independent & Open Source • Remote</div>
+              <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
+                Architecting bespoke web applications, resilient edge APIs, and high-performance frontend interfaces. Providing system audits and code optimization.
+              </p>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
+                <span>Full-Stack Software Engineer</span>
+                <span class="measure">2022 — 2024</span>
+              </div>
+              <div class="measure" style="color:var(--accent);">Technology Solutions Enterprise • Manila</div>
+              <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
+                Engineered scalable REST microservices, database schemas, and redesigned the core customer portal, reducing bundle size by 42% and API response time by 35%.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:1.5rem;">
+          <h4 class="measure" style="margin-bottom:0.75rem;">Education</h4>
+          <div>
+            <div style="display:flex; justify-content:space-between; font-weight:600; font-size:0.95rem;">
+              <span>Bachelor of Science in Computer Engineering</span>
+              <span class="measure">Honors</span>
+            </div>
+            <div class="measure" style="color:var(--accent);">College of Engineering & Architecture</div>
+            <p style="font-size:0.85rem; color:var(--ink-2); margin-top:0.25rem;">
+              Focus on Microprocessors, Computer Architecture, Data Structures & Algorithms, Network Security, and Distributed Systems.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 

@@ -1,12 +1,12 @@
 /**
- * KEN'S PORTFOLIO - MAIN INTERACTIVE ENGINE
+ * DONOR - PERSONAL DEVELOPER PORTFOLIO ENGINE
  * Swiss Editorial & Metic Studio Aesthetic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   const config = window.PortfolioConfig || {};
 
-  // 1. Toast System
+  // 1. Toast Notification System
   const toastEl = document.getElementById('app-toast');
   window.showAppToast = function (message, duration = 3200) {
     if (!toastEl) return;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     soundBtn.addEventListener('click', () => {
       const state = window.soundEngine.toggle();
       updateSoundUI(state);
-      window.showAppToast(state ? 'Interactive sound effects enabled.' : 'Sound muted.');
+      window.showAppToast(state ? 'Tactile sound effects enabled.' : 'Sound muted.');
     });
   }
 
@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Initialize theme
   const savedTheme = localStorage.getItem('donor-portfolio-theme') || 
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   setTheme(savedTheme);
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Mobile Menu Navigation (Metic Circle Reveal)
+  // 4. Main Menu Navigation (Metic Circle Reveal)
   const menuBtn = document.getElementById('menu-toggle');
   const menuDialog = document.getElementById('main-menu-dialog');
   const closeMenuBtn = document.getElementById('menu-close-btn');
@@ -147,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ? config.projects 
       : config.projects.filter(p => p.category.toLowerCase().includes(filter.toLowerCase()));
 
-    projectsGrid.innerHTML = filtered.map((project, idx) => `
+    projectsGrid.innerHTML = filtered.map((project) => `
       <article class="project-card interactive-card" data-project-id="${project.id}" data-cursor="view" data-cursor-label="EXPLORE">
         <div class="project-card-header">
           <div class="project-meta-row">
@@ -171,19 +170,21 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="project-tags">
             ${project.tags.map(t => `<span class="tag-pill">${t}</span>`).join('')}
           </div>
-          <button type="button" class="view-project-btn" data-project-id="${project.id}" aria-label="View details for ${project.title}">
-            <span class="sr-only">View</span>
-            <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor">
-              <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
-            </svg>
-          </button>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="link measure text-accent" title="GitHub Repository" onclick="event.stopPropagation();">GitHub ↗</a>
+            <button type="button" class="view-project-btn" data-project-id="${project.id}" aria-label="View case study for ${project.title}">
+              <svg width="18" height="18" viewBox="0 0 256 256" fill="currentColor">
+                <path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </article>
     `).join('');
 
-    // Attach click listeners to cards
+    // Attach click listeners to open modal
     projectsGrid.querySelectorAll('.project-card').forEach(card => {
-      card.addEventListener('click', (e) => {
+      card.addEventListener('click', () => {
         const id = card.getAttribute('data-project-id');
         openProjectModal(id);
       });
@@ -221,38 +222,38 @@ document.addEventListener('DOMContentLoaded', () => {
         <h2 class="display-3 modal-title">${project.title}</h2>
         <p class="lead modal-summary">${project.summary}</p>
         
-        <div class="modal-section">
-          <h4 class="measure">Architecture & Execution</h4>
-          <p class="modal-desc">${project.description}</p>
+        <div class="modal-section" style="margin-top:2rem;">
+          <h4 class="measure">Technical Architecture & Logic</h4>
+          <p class="modal-desc" style="margin-top:0.5rem; line-height:1.6; color:var(--ink-2);">${project.description}</p>
         </div>
 
-        <div class="modal-section">
-          <h4 class="measure">Key Performance Metrics</h4>
+        <div class="modal-section" style="margin-top:2rem;">
+          <h4 class="measure">Performance Benchmarks</h4>
           <div class="modal-stats-grid">
             ${project.stats.map(s => `
               <div class="modal-stat-box">
-                <div class="stat-val">${s.value}</div>
-                <div class="stat-label">${s.label}</div>
+                <div class="stat-val" style="font-weight:700; font-size:1.15rem;">${s.value}</div>
+                <div class="stat-label" style="font-size:0.75rem; color:var(--ink-muted);">${s.label}</div>
               </div>
             `).join('')}
           </div>
         </div>
 
-        <div class="modal-section">
-          <h4 class="measure">Technology & Standards</h4>
-          <div class="modal-tags">
+        <div class="modal-section" style="margin-top:2rem;">
+          <h4 class="measure">Technology Stack & Standards</h4>
+          <div class="modal-tags" style="display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.75rem;">
             ${project.tags.map(t => `<span class="tag-pill">${t}</span>`).join('')}
           </div>
         </div>
 
-        <div class="modal-actions">
-          <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-cursor="hover">
-            <span>Explore Repository</span>
+        <div class="modal-actions" style="display:flex; gap:1rem; margin-top:3rem;">
+          <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-cursor="hover">
+            <span>Source Code (GitHub)</span>
             <span class="btn-dot">
               <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"></path></svg>
             </span>
           </a>
-          <button type="button" class="btn btn-secondary modal-close-action" data-cursor="hover">Close Case Study</button>
+          <button type="button" class="btn btn-secondary modal-close-action" data-cursor="hover">Back to Portfolio</button>
         </div>
       </div>
     `;
@@ -260,7 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
     projectModal.classList.add('is-open');
     document.body.style.overflow = 'hidden';
 
-    // Hook internal close action
     const internalClose = projectModalContent.querySelector('.modal-close-action');
     if (internalClose) {
       internalClose.addEventListener('click', closeProjectModal);
@@ -276,19 +276,52 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.soundEngine) window.soundEngine.playTick();
   }
 
-  if (projectModalClose) {
-    projectModalClose.addEventListener('click', closeProjectModal);
-  }
-
+  if (projectModalClose) projectModalClose.addEventListener('click', closeProjectModal);
   if (projectModal) {
     projectModal.addEventListener('click', (e) => {
-      if (e.target === projectModal) {
-        closeProjectModal();
-      }
+      if (e.target === projectModal) closeProjectModal();
     });
   }
 
-  // 8. Copy Email to Clipboard
+  // 8. Interactive Resume / CV Modal
+  const resumeModal = document.getElementById('resume-modal');
+  const resumeOpenBtns = document.querySelectorAll('.open-resume-btn');
+  const resumeCloseBtn = document.getElementById('resume-modal-close');
+  const printResumeBtn = document.getElementById('print-resume-btn');
+
+  function openResume() {
+    if (!resumeModal) return;
+    resumeModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    if (window.soundEngine) window.soundEngine.playTick();
+  }
+
+  function closeResume() {
+    if (!resumeModal) return;
+    resumeModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+    if (window.soundEngine) window.soundEngine.playTick();
+  }
+
+  resumeOpenBtns.forEach(btn => btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openResume();
+  }));
+
+  if (resumeCloseBtn) resumeCloseBtn.addEventListener('click', closeResume);
+  if (resumeModal) {
+    resumeModal.addEventListener('click', (e) => {
+      if (e.target === resumeModal) closeResume();
+    });
+  }
+
+  if (printResumeBtn) {
+    printResumeBtn.addEventListener('click', () => {
+      window.print();
+    });
+  }
+
+  // 9. Copy Email to Clipboard
   const copyEmailBtns = document.querySelectorAll('.copy-email-btn');
   copyEmailBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -297,9 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navigator.clipboard.writeText(email).then(() => {
           window.showAppToast(`Copied ${email} to clipboard!`);
           if (window.soundEngine) window.soundEngine.playSuccess();
-        }).catch(() => {
-          fallbackCopy(email);
-        });
+        }).catch(() => fallbackCopy(email));
       } else {
         fallbackCopy(email);
       }
@@ -317,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.soundEngine) window.soundEngine.playSuccess();
   }
 
-  // 9. Contact Form Simulation
+  // 10. Contact Form Dispatch
   const contactForm = document.getElementById('portfolio-contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -331,20 +362,19 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Generate mailto link for direct sending
-      const subject = encodeURIComponent(`Project Inquiry from ${name}`);
-      const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`);
+      const subject = encodeURIComponent(`Engineering Inquiry from ${name}`);
+      const body = encodeURIComponent(`Sender: ${name} (${email})\n\nMessage:\n${message}`);
       const mailtoUrl = `mailto:${config.profile.email}?subject=${subject}&body=${body}`;
 
       window.location.href = mailtoUrl;
 
-      window.showAppToast('Opening your email client... Thank you!');
+      window.showAppToast('Opening your default mail client... Thank you!');
       if (window.soundEngine) window.soundEngine.playSuccess();
       contactForm.reset();
     });
   }
 
-  // 10. Coordinates live jitter simulation for architectural authenticity
+  // 11. Coordinates live jitter simulation
   const coordDisplay = document.querySelector('.live-coords');
   if (coordDisplay) {
     setInterval(() => {
@@ -352,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const baseLng = 120.9842;
       const jitterLat = (baseLat + (Math.random() - 0.5) * 0.0004).toFixed(4);
       const jitterLng = (baseLng + (Math.random() - 0.5) * 0.0004).toFixed(4);
-      coordDisplay.textContent = `${jitterLat}° N, ${jitterLng}° E`;
+      coordDisplay.textContent = `${jitterLat}° N, ${jitterLng}° E — Manila / Remote`;
     }, 4500);
   }
 });
