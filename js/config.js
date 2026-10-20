@@ -103,6 +103,42 @@ const PortfolioConfig = {
       githubUrl: "https://github.com",
       demoUrl: "#",
       image: "./assets/tanggapan-ng-kaligtasan.png"
+    },
+    {
+      id: "smart-glove",
+      title: "ESP32 Tactile Smart Glove",
+      subtitle: "Custom Wearable Motion & Gesture Translation Interface",
+      category: "Hardware & Embedded IoT Interface",
+      year: "2026",
+      summary: "Custom wearable motion and gesture translation hardware interface.",
+      description: "This wearable motion and gesture translation hardware interface was engineered to bridge human hand kinematics with digital systems, translating finger articulation and spatial orientation into real-time digital commands and readable text. Built with five analog flex sensing resistors, a 6-axis MPU6050 IMU, and an ESP32 microcontroller running embedded C/C++ with I2C LCD diagnostics.",
+      tags: ["ESP32 DevKit V1", "Embedded C/C++", "MPU6050 IMU", "Flex Sensing Resistors", "I2C Protocol", "Tinkercad / Wokwi Simulation"],
+      stats: [
+        { label: "Flex Channels", value: "5 Analog" },
+        { label: "Spatial Tracking", value: "6-DOF IMU" },
+        { label: "Telemetry", value: "Real-Time I2C" }
+      ],
+      githubUrl: "https://github.com",
+      demoUrl: "#",
+      image: "./assets/esp32-smart-glove.png"
+    },
+    {
+      id: "project-nexus",
+      title: "Project Nexus (Campus Event Manager)",
+      subtitle: "Comprehensive Mobile & Backend Ecosystem — ICCT Colleges",
+      category: "Native Android & Cloud Ecosystem",
+      year: "2025 — 2026",
+      summary: "Comprehensive mobile and backend ecosystem designed for automated event management and real-time coordination.",
+      description: "Engineered to eliminate paper-based logs, long registration queues, and fragmented student attendance during campus gatherings and academic symposiums at ICCT Colleges. Features instant QR code verification, offline-first data caching, mobile analytics dashboard, and targeted push notifications via Firebase Cloud Messaging (FCM).",
+      tags: ["Kotlin", "Android Studio", "Firebase Firestore", "Firebase Auth", "FCM", "Figma"],
+      stats: [
+        { label: "Platform", value: "Native Android" },
+        { label: "Verification", value: "Instant QR Scanner" },
+        { label: "Backend", value: "Firebase Real-Time" }
+      ],
+      githubUrl: "https://github.com",
+      demoUrl: "#",
+      image: "./assets/project-nexus.png"
     }
   ],
 
